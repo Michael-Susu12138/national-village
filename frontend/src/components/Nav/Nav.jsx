@@ -3,15 +3,14 @@ import { NavLink } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
 import "./Nav.css";
+import NVlogo from "/NV_logo.png";
 
 function Navigation() {
-  //   const logoPath = "/assets/logo Small.png";
-
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
         <Navbar.Brand as={NavLink} to="/">
-          {/* <img src={logoPath} alt="Logo" /> */}
+          <img src={NVlogo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
