@@ -101,7 +101,7 @@ function Nav() {
             <li className='css-17b3rz5'><a href="/student-discount/us/cats/entertainment?source=nav" data-testid="nav-category-entertainment" className="css-lo4idg">Entertainment</a></li>
             <li className='css-17b3rz5'><a href="/student-discount/us/cats/home-utilities?source=nav" data-testid="nav-category-home-utilities" className="css-lo4idg">Home &amp; Utilities</a></li>
             <li className='css-17b3rz5'><a href="/student-discount/us/cats/travel?source=nav" data-testid="nav-category-travel" className="css-lo4idg">Travel</a></li>
-            <li className='css-17b3rz5'>
+            <li className='css-1a45p86'>
               <button data-testid="nav-category-more" className='css-84zv3j'>
                 <span>More</span>
                 <span className='css-1iuj5ih'>
