@@ -1,8 +1,10 @@
-import React from "react";
+import Alert from "../../components/Alert/Alert";
 import Nav from "../../components/Nav/Nav";
 
 const Home = () => {
-  return <Nav></Nav>;
+  return <Alert>
+    <Nav />
+  </Alert>;
 };
 
 export default Home;
