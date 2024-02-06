@@ -54,7 +54,7 @@ function Nav() {
               <li className='css-zffja8'><a href="https://accounts.studentbeans.com/oauth/authorize?country=us&amp;response_type=token&amp;client_id=e55920fd-5410-4534-b926-b1214c85f64a&amp;redirect_uri=https://www.studentbeans.com/users/auth/studentbeans/callback&amp;user_return_to=https%3A%2F%2Fwww.studentbeans.com%2Fus&amp;auth_path=log-in&amp;consumer_group=student" data-testid="nav-login" className="css-u2nkub">Login</a></li>
               <li>
                 <div className='css-bves18'>
-                  <a className="css-ms1tcm" href="../pages/Register/index.jsx" type="button" target="_self">
+                  <a className="css-ms1tcm" href="https://accounts.studentbeans.com/oauth/authorize?country=us&amp;response_type=token&amp;client_id=e55920fd-5410-4534-b926-b1214c85f64a&amp;redirect_uri=https://www.studentbeans.com/users/auth/studentbeans/callback&amp;user_return_to=https%3A%2F%2Fwww.studentbeans.com%2Fus&amp;auth_path=sign-up&amp;consumer_group=student" type="button" target="_self">
                     <span className="css-xfi4js">Register
                     </span>
                   </a>
