@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  font-family: Gibson, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #6523e3; /* Set the main background color */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  width: 100%;
+  text-align: left;
+  background-color: #6523e3;
+  z-index: 1;
+
+  font-family: Gibson, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #6523e3; /* Set the main background color */
+}
+
+.footer-middle,
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+
+  align-items: baseline; /* Aligns items to the start of the flex container */
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between; /* Aligns children to the edges */
+  width: 100%; /* Ensures the flex container spans the full width */
+  align-items: center; /* Aligns children vertically in the center */
+  padding: 0 40px; /* Adjust padding as needed */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #ffffff !important; /* Sets the link color */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.footer-top {
+  order: 1; /* Control the order of flex items */
+}
+
+.footer-middle {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(180px, 1fr)
+  ); /* Responsive columns for the footer links */
+  gap: 20px;
+  order: 2;
+}
+
+.footer-bottom {
+  order: 3;
+  align-self: center;
+  padding-top: 20px; /* Adds space above the app store badges */
+}
+
+.footer-top .social-links {
+  display: flex;
+  justify-content: flex-end; /* Aligns social links to the end (right) */
+  gap: 10px; /* Space between social links */
+}
+
+.footer-top .social-links li {
+  display: inline;
+}
+
+.footer-middle h2 {
+  font-size: 1.2rem; /* Sets the font size for headings */
+  margin-bottom: 10px; /* Space below headings */
+}
+
+.footer-middle ul li {
+  margin-bottom: 5px; /* Space between list items */
+}
+
+.app-promo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between app store badges */
+}
+
+.app-promo img {
+  height: 40px; /* Sets the height of the app store badges */
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Stacks the footer sections on top of each other */
+  }
+
+  .footer-top .social-links {
+    justify-content: center; /* Centers social links on smaller screens */
+    padding-bottom: 20px; /* Adds space below social links */
+  }
+
+  .footer-middle {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); /* Adjusts column size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 20px; /* Reduces padding on very small screens */
+  }
+}
