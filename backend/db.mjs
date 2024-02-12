@@ -1,4 +1,4 @@
-import NewsModel from "./models/News.mjs";
+import RestaurantsModel from "./models/Restaurants.mjs";
 import User from "./models/User.mjs";
 import mongoose from "mongoose";
 
@@ -10,7 +10,7 @@ mongoose
 
 const db = {
   mongoose: mongoose,
-  News: NewsModel,
+  Restaurants: RestaurantsModel,
   User: User,
 };
 
