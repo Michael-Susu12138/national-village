@@ -16,6 +16,7 @@ import cors from "cors";
 // routes import
 // import newsRoutes from "./routes/newsRoutes.mjs";
 // import authRoutes from "./routes/authRoutes.mjs";
+import restaurantRoutes from "./routes/newsRoutes.mjs";
 
 const app = express(); // create app instance
 
@@ -40,8 +41,8 @@ app.use(express.urlencoded({ extended: false }));
 //   })
 // );
 
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.initialize());
+// app.use(passport.session());
 
 app.use(flash()); // for warnings
 
@@ -58,7 +59,7 @@ app.use(express.json());
 
 // api endpoints
 // news handeling
-// app.use("/api/news", newsRoutes);
+app.use("/api/restaurant", restaurantRoutes);
 // app.use("/api/auth", authRoutes);
 
 // TESTING DATA

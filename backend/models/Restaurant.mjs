@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 mongoose.connect(process.env.DSN);
 
-const RestaurantsSchema = new mongoose.Schema({
+const RestaurantSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -43,8 +43,8 @@ const RestaurantsSchema = new mongoose.Schema({
   },
 });
 
-const Restaurants = mongoose.model("Restaurants", RestaurantsSchema)
+const Restaurant = mongoose.model("Restaurant", RestaurantSchema);
 // const News = mongoose.model("News", NewsSchema);
 
 // export default News;
-export default Restaurants;
+export default Restaurant;
