@@ -1,8 +1,9 @@
-import NewsModel from "./models/News.mjs";
+import Restaurant from "./models/Restaurant.mjs";
 import User from "./models/User.mjs";
 import mongoose from "mongoose";
 
 // mongoose.connect(process.env.DSN);
+
 mongoose
   .connect(process.env.DSN, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connection successful"))
@@ -10,7 +11,7 @@ mongoose
 
 const db = {
   mongoose: mongoose,
-  News: NewsModel,
+  Restaurant: Restaurant,
   User: User,
 };
 

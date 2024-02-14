@@ -2,20 +2,20 @@ import mongoose from "mongoose";
 
 mongoose.connect(process.env.DSN);
 
-const NewsSchema = new mongoose.Schema({
-  title: {
+const RestaurantSchema = new mongoose.Schema({
+  name: {
     type: String,
     required: true,
   },
   summary: {
     type: String,
-    required: true,
+    required: false,
   },
-  content: {
-    type: String,
-    required: true,
+  rating: {
+    type: Number,
+    required: false,
   },
-  author: {
+  location: {
     type: String,
     required: true,
   },
@@ -26,6 +26,7 @@ const NewsSchema = new mongoose.Schema({
   updatedDate: {
     type: Date,
     default: null,
+    required: false,
   },
   category: {
     type: String,
@@ -40,12 +41,10 @@ const NewsSchema = new mongoose.Schema({
     type: String,
     default: null,
   },
-  readMoreUrl: {
-    type: String,
-    default: null,
-  },
 });
 
-const News = mongoose.model("News", NewsSchema);
+const Restaurant = mongoose.model("Restaurant", RestaurantSchema);
+// const News = mongoose.model("News", NewsSchema);
 
-export default News;
+// export default News;
+export default Restaurant;
