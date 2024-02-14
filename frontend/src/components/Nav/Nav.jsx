@@ -1,5 +1,6 @@
 import "./Nav.css";
 import icon from "../../assets/icon.svg";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -176,14 +177,14 @@ function Nav() {
               </li>
               <li>
                 <div className="css-bves18">
-                  <a
+                  <Link
                     className="css-ms1tcm"
-                    href="https://accounts.studentbeans.com/oauth/authorize?country=us&amp;response_type=token&amp;client_id=e55920fd-5410-4534-b926-b1214c85f64a&amp;redirect_uri=https://www.studentbeans.com/users/auth/studentbeans/callback&amp;user_return_to=https%3A%2F%2Fwww.studentbeans.com%2Fus&amp;auth_path=sign-up&amp;consumer_group=student"
+                    to="/register"
                     type="button"
-                    target="_self"
+                    target="_blank"
                   >
                     <span className="css-xfi4js">Register</span>
-                  </a>
+                  </Link>
                 </div>
               </li>
               <li className="css-zffja8"></li>

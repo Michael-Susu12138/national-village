@@ -399,6 +399,10 @@ svg:not(:root) {
   padding: 0px 20px;
 }
 
+.css-17b3rz5 a:hover {
+  color: aqua;
+}
+
 .css-lo4idg {
   display: block;
   font-family: Gibson, Helvetica, Arial, "Sans Serif";

@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #071f45;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-family:
+    Gibson,
+    Helvetica,
+    Arial,
+    Sans Serif;
+}
+
+.css-111aaa {
+  background-color: rgb(224, 211, 249);
+  overflow: hidden;
+}
+
+.css-1y5im6x {
+  position: relative;
+  background-color: rgb(246, 247, 249);
+}
+
+.css-1y5im6y {
+  position: static;
+  overflow: auto;
+}
+
+.css-1y5im6z {
+  width: 1250px;
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.css-1bijsjo {
+  height: 84px;
+  line-height: 84px;
+}
+
+.css-1bijsj1 {
+  float: left;
+  position: relative;
+  width: 25%;
+  padding: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.css-1qpa9mn {
+  margin: 0px;
+  width: auto;
+  overflow: visible;
+  background: rgb(224, 228, 235);
+  display: inline-block;
+  padding: 9px 12px 7px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: rgb(7, 31, 69);
+  line-height: normal;
+  text-decoration: none;
+  border: none;
+}
+
+.css-1bijsj2 {
+  float: left;
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.css-10qpvih {
+  height: 27px;
+  vertical-align: middle;
+}
+
+.css-2sstpbq {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 3.25em;
+  height: 3.25em;
+  margin: 0px 0.5em;
+  padding: 0px;
+  cursor: pointer;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid rgb(210, 214, 214);
+}
