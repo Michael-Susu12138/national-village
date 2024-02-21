@@ -141,7 +141,7 @@ function CreateRestaurantForm() {
         name="discount"
         value={restaurant.discount}
         onChange={handleChange}
-        placeholder="Summary"
+        placeholder="Discount"
       />
       <input
         type="number"
