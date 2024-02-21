@@ -9,6 +9,9 @@ const RestaurantSchema = new mongoose.Schema(
       required: true,
       unique: true, // Ensure name is unique
     },
+    discount: {
+      type: String,
+    },
     summary: {
       type: String,
     },

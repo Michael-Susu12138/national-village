@@ -71,9 +71,27 @@ const deleteAllRestaurants = async (req, res) => {
   }
 };
 
+const searchRestaurants = async (req, res) => {
+  try {
+    const query = {};
+    // Build query object based on provided query params
+    for (const [key, value] of Object.entries(req.query)) {
+      query[key] = new RegExp(value, "i"); // 'i' for case-insensitive matching
+    }
+
+    const restaurants = await db.Restaurant.find(query);
+    res.json(restaurants);
+  } catch (err) {
+    res
+      .status(500)
+      .json({ message: "Error searching for restaurants", error: err });
+  }
+};
+
 export {
   getAllRestaurants,
   createRestaurant,
   updateRestaurant,
   deleteAllRestaurants,
+  searchRestaurants,
 };

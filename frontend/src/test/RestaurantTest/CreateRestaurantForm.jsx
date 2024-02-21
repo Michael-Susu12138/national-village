@@ -137,6 +137,13 @@ function CreateRestaurantForm() {
         placeholder="Summary"
       />
       <input
+        type="text"
+        name="discount"
+        value={restaurant.discount}
+        onChange={handleChange}
+        placeholder="Summary"
+      />
+      <input
         type="number"
         name="rating"
         value={restaurant.rating}
