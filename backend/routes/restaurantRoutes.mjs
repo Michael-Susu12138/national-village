@@ -5,6 +5,7 @@ import {
   updateRestaurant,
   deleteAllRestaurants,
   searchRestaurants,
+
 } from "../controllers/restaurantController.mjs";
 
 const router = express.Router();
