@@ -16,7 +16,7 @@ import cors from "cors";
 // routes import
 // import newsRoutes from "./routes/newsRoutes.mjs";
 // import authRoutes from "./routes/authRoutes.mjs";
-import restaurantRoutes from "./routes/newsRoutes.mjs";
+import restaurantRoutes from "./routes/restaurantRoutes.mjs";
 
 const app = express(); // create app instance
 

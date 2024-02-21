@@ -2,12 +2,19 @@ import express from "express";
 import {
   getAllRestaurants,
   createRestaurant,
-} from "../controllers/newsController.mjs";
+  updateRestaurant,
+  deleteAllRestaurants,
+  searchRestaurants,
+
+} from "../controllers/restaurantController.mjs";
 
 const router = express.Router();
 
 router.get("/", getAllRestaurants);
-router.post("/add", isAuthenticated, createRestaurant);
+router.post("/add", createRestaurant);
+router.put("/update", updateRestaurant);
+router.delete("/delete-all", deleteAllRestaurants);
+router.get("/search", searchRestaurants);
 
 // function isAuthenticated(req, res, next) {
 //   if (req.session.user) {
