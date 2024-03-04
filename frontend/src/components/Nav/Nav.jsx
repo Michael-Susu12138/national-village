@@ -1,5 +1,4 @@
 import "./Nav.css";
-import icon from "../../assets/icon.svg";
 import { Link } from "react-router-dom";
 
 function Nav() {
@@ -10,10 +9,24 @@ function Nav() {
           <button aria-label="Account menu" className="css-1xq0p7y">
             <div data-testid="profile-img" className="css-1q2uw3t">
               <div className="css-1nrevy2">
-                {/* <svg width="20px" height="20px" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Account menu icon" className="css-1xdhyk6">
-                <g fill="none" stroke="#071F45" strokeLinecap="round" strokeWidth="2"><path d="M15 9H1M15 5.25H1M15 1.25H1"></path></g></svg> */}
-                {/* <img src={icon} alt="" /> */}
-                <p>hello</p>
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 16 10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Account menu icon"
+                  className="css-1xdhyk6"
+                >
+                  <g
+                    fill="none"
+                    stroke="#071F45"
+                    strokeLinecap="round"
+                    strokeWidth="2"
+                  >
+                    <path d="M15 9H1M15 5.25H1M15 1.25H1"></path>
+                  </g>
+                </svg>
               </div>
             </div>
           </button>
@@ -32,21 +45,16 @@ function Nav() {
                     src="https://cdn.studentbeans.com/static/web/assets/images/sb_dark_logo.svg"
                   />
                 </a>
-                <a
-                  id="icon"
-                  href="/us"
-                  data-testid="nav-log"
-                  className="css-zffja8"
-                >
+                <a href="/us" data-testid="nav-log" className="css-zffja8">
                   <img
-                    alt="National Village"
+                    alt="Student Beans"
                     loading="lazy"
-                    width="300"
-                    height="100"
+                    width="172"
+                    height="36"
                     decoding="async"
                     data-nimg="1"
                     className="css-0"
-                    src={icon}
+                    src="https://cdn.studentbeans.com/static/web/assets/images/sb_dark_logo.svg"
                   />
                 </a>
               </li>
@@ -181,7 +189,7 @@ function Nav() {
                     className="css-ms1tcm"
                     to="/register"
                     type="button"
-                    target="_blank"
+                    target="_self"
                   >
                     <span className="css-xfi4js">Register</span>
                   </Link>
