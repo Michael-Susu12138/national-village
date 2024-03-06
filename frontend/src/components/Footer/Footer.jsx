@@ -1,6 +1,4 @@
 import "./Footer.css";
-
-import React from "react";
 import { Link } from "react-router-dom"; // Assuming you're using react-router for navigation
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -8,16 +8,26 @@ const Register = () => {
         <div className="css-1y5im6y">
           <div className="css-1y5im6z">
             <nav className="css-1bijsjo">
-              <div className="css-1bijsj1">
-                <a
-                  href="https://www.studentbeans.com/us"
-                  aria-label="Back"
-                  tabIndex="0"
-                  className="css-1qpa9mn"
-                >
-                  <span>National Village</span>
-                </a>
+              <div>
+                <div className="css-1bijsj1">
+                  <a
+                    href="https://www.studentbeans.com/us"
+                    aria-label="Back"
+                    tabIndex="0"
+                    className="css-1qpa9mn"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                      className="css-3c8dyr"
+                    >
+                      <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                    </svg>
+                    <span className="css-3c8dys">National Village</span>
+                  </a>
+                </div>
               </div>
+
               <div className="css-1bijsj2">
                 <a href="https://www.studentbeans.com/us">
                   <img
@@ -27,23 +37,35 @@ const Register = () => {
                   />
                 </a>
               </div>
-              <div className="css-1bijsj3"></div>
-              <div className="css-1bijsj4"></div>
-              <nav className="css-1bijsjp"></nav>
+              <div className="css-1bijsj3">
+                <button
+                  data-testid="menu-button"
+                  tabIndex="0"
+                  className="css-lofd93"
+                >
+                  <label className="hamburger">
+                    <input type="checkbox" />
+                    <svg viewBox="0 0 32 32">
+                      <path
+                        className="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                      ></path>
+                      <path className="line" d="M7 16 27 16"></path>
+                    </svg>
+                  </label>
+                </button>
+              </div>
             </nav>
           </div>
         </div>
       </div>
-      {/* <div className="content-container">
+
+      <div className="content-container">
         <div className="css-dc7ee6">
           <div className="css-f076qf">
             <div role="tablist" className="css-zjik7">
-              <button tabIndex="-1" className="css-3dxqqo">
-                Resgiter
-              </button>
-              <button tabIndex="0" className="css-1qhaazl">
-                Log in
-              </button>
+              <button className="css-3dxqqo">Resgiter</button>
+              <button className="css-1qhaazl">Log in</button>
             </div>
             <div className="css-ouos42">
               <div className="css-1kawphh">
@@ -63,17 +85,111 @@ const Register = () => {
                   </p>
                 </div>
                 <form aria-label="form">
-                  <div className="css-b8qz6"></div>
-                  <div className="css-b8qz6"></div>
-                  <div style="margin-top: 1.25em;"></div>
-                  <div className="css-1fezm8m"></div>
+                  <div className="css-b8qz6">
+                    {/* <label
+                      id="label-email"
+                      htmlFor="email"
+                      style="position: absolute; top: 0px; font-size: 16px; font-weight: normal; line-height: 20px; height: 20px;"
+                    >
+                      <span className="css-7it1vf">Email address</span>
+                    </label> */}
+                    <input
+                      id="email"
+                      autoComplete="username"
+                      name="email"
+                      type="email"
+                      aria-labelledby="label-email"
+                      placeholder=""
+                      className="css-17ygfqu"
+                    />
+                    <div className="css-koxizw">
+                      <span>
+                        <span></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="css-b8qz6">
+                    {/* <label
+                      id="label-password"
+                      htmlFor="password"
+                      style="position: absolute; top: 0px; font-size: 16px; font-weight: normal; line-height: 20px; height: 20px;"
+                    >
+                      <span className="css-7it1vf">Password</span>
+                    </label> */}
+                    <input
+                      id="password"
+                      autoComplete="new-password"
+                      name="password"
+                      type="password"
+                      aria-labelledby="label-password"
+                      placeholder=""
+                      className="css-1ajuzyj"
+                    />
+                    <div className="css-koxizw">
+                      <span>
+                        <span></span>
+                      </span>
+                    </div>
+                    <button
+                      type="button"
+                      aria-pressed="false"
+                      aria-label="Toggle to show or hide your password."
+                      className="css-1us5i9a"
+                    >
+                      {/* <svg
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="css-1989ovb"
+                      >
+                        <path
+                          d="M12 6C15.79 6 19.17 8.13 20.82 11.5C19.17 14.87 15.79 17 12 17C8.21 17 4.83 14.87 3.18 11.5C4.83 8.13 8.21 6 12 6ZM12 4C7 4 2.73 7.11 1 11.5C2.73 15.89 7 19 12 19C17 19 21.27 15.89 23 11.5C21.27 7.11 17 4 12 4ZM12 9C13.38 9 14.5 10.12 14.5 11.5C14.5 12.88 13.38 14 12 14C10.62 14 9.5 12.88 9.5 11.5C9.5 10.12 10.62 9 12 9ZM12 7C9.52 7 7.5 9.02 7.5 11.5C7.5 13.98 9.52 16 12 16C14.48 16 16.5 13.98 16.5 11.5C16.5 9.02 14.48 7 12 7Z"
+                          fill="#6B7A94"
+                        ></path>
+                      </svg> */}
+                    </button>
+                  </div>
+                  <div>
+                    {/* style="margin-top: 1.25em;" */}
+                    <button disabled="" className="css-1j1xijh">
+                      Let&aposs go!
+                    </button>
+                  </div>
+                  <div className="css-1fezm8m">
+                    <p className="css-19xlmcl">
+                      <span>
+                        By continuing to create an account, you agree to Student
+                        Beans&apos Terms &amp; Conditions and Privacy Policy.
+                        {/* <a
+                          href="https://accounts.studentbeans.com/us/info/terms"
+                          target="_blank"
+                          style="color: rgb(101, 35, 227); text-decoration: underline;"
+                          rel="noreferrer"
+                        >
+                          Terms &amp; Conditions
+                        </a>
+                        and
+                        <a
+                          href="/us/info/privacy"
+                          target="_blank"
+                          style="color: rgb(101, 35, 227); text-decoration: underline;"
+                        >
+                          Privacy Policy
+                        </a>
+                        . */}
+                      </span>
+                    </p>
+                  </div>
                 </form>
                 <p className="css-1wq7wtj">or sign up using</p>
-                <button
+                {/* <button
                   aria-label="Sign up with Facebook"
                   className="css-2sstpbq"
                 >
-                <svg
+                  <svg
                     aria-hidden="true"
                     width="18"
                     height="18"
@@ -158,13 +274,14 @@ const Register = () => {
                       fill="#000"
                     ></path>
                   </svg>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div style="position: static; overflow: auto; background-color: rgb(246, 247, 249);">
+
+      {/* <div style="position: static; overflow: auto; background-color: rgb(246, 247, 249);">
         <div className="css-1ibvymd">
           <div className="css-1gap6ip">
             <footer className="css-1efjo2a">
