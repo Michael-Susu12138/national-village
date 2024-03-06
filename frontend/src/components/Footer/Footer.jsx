@@ -9,13 +9,16 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import bannerLogo from "/src/assets/National-Village-Banner-Logo.png";
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-top">
         <Link to="/">
-          <h1> National Village</h1>
+          <h>
+            <img src={bannerLogo} alt="Banner Logo"></img>
+          </h>
         </Link>
         <ul className="social-links">
           <li>
