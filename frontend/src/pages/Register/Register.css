@@ -179,11 +179,212 @@ body {
   stroke-dashoffset: -32.42;
 }
 
+.css-dc7ee6 {
+  position: relative;
+  overflow: visible;
+  background-color: rgb(246, 247, 249);
+  padding: 0px 15px 75px;
+}
+
+.css-f076qf {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  min-width: 320px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(23, 27, 30, 0.1) 0px 2px 4px;
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+
+.css-zjik7 {
+  display: flex;
+}
+
+.css-uhxz4n {
+  margin: 0px;
+  overflow: visible;
+  line-height: normal;
+  width: 50%;
+  padding: 18px 2px 14px;
+  text-decoration: none;
+  border: none;
+  background: rgb(224, 228, 235);
+  color: rgb(107, 122, 148);
+  box-shadow: rgba(7, 31, 69, 0.05) -4px -4px 5px inset;
+}
+
+.css-3dxqqo {
+  margin: 0px;
+  overflow: visible;
+  line-height: normal;
+  width: 50%;
+  padding: 14px 2px;
+  text-decoration: none;
+  background: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
+  color: rgb(7, 31, 69);
+  border-top: 4px solid rgb(101, 35, 227);
+  font-weight: 600;
+}
+
+.css-ouos42 {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  min-width: 320px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.css-1b21cc6 {
+  margin: 0px;
+  line-height: 1.25em;
+  color: rgb(7, 31, 69);
+  font-size: 24px;
+  font-family: "Gibson SemiBold", Helvetica, Arial, "Sans Serif";
+}
+
+.css-11biiks {
+  margin: 0px;
+  font-family: Gibson, Helvetica, Arial, "Sans Serif";
+  line-height: 1.5em;
+  color: rgb(7, 31, 69);
+  font-size: 16px;
+}
+
+.css-1d0nbku {
+  margin-top: 24px;
+}
+
+form {
+  margin: 0px;
+}
+
+.css-b8qz6 {
+  position: relative;
+  padding: 24px 0px;
+}
+
+.css-1klt2ma {
+  overflow: visible;
+  background: transparent;
+  line-height: normal;
+  margin: 8px 0px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 200ms ease 0s;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: rgb(101, 35, 227);
+  border: none;
+}
+
+.css-b8qz6a {
+  position: absolute;
+  top: 0px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  height: 20px;
+}
+
+.css-7it1vf {
+  margin: 0px;
+  line-height: 1.5em;
+  color: rgb(7, 31, 69);
+  font-family: "Gibson SemiBold", Helvetica, Arial, "Sans Serif";
+  font-size: 0.8125em;
+}
+
+.css-17ygfqu {
+  height: 46px;
+  padding: 0px 12px;
+  margin: 0px;
+  font-size: 16px;
+  font-family: Gibson, Helvetica, Arial, "Sans Serif";
+  line-height: 24px;
+  color: rgb(7, 31, 69);
+  border-radius: 5px;
+  border: 1px solid rgb(224, 228, 235);
+  background: rgb(239, 241, 245);
+}
+
+.css-koxizw {
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(234, 13, 13);
+  margin-top: 4px;
+}
+
+.css-1989ovb {
+  vertical-align: middle;
+}
+
+.css-2ji8uu {
+  margin-top: 1.25em;
+}
+
+.css-1j1xijh {
+  border: none;
+  overflow: visible;
+  background: rgb(101, 35, 227);
+  line-height: normal;
+  margin: 8px 0px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 200ms ease 0s;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.css-1fezm8m {
+  text-align: center;
+  padding: 0px 30px;
+  margin-top: 20px;
+}
+
+.css-19xlmcl {
+  margin: 0px;
+  font-family: Gibson, Helvetica, Arial, "Sans Serif";
+  line-height: 1.5em;
+  color: rgb(7, 31, 69);
+  font-size: 13px;
+}
+
 @media (min-width: 1100px) {
   .content-container {
     display: flex;
     flex-direction: column;
     flex: 1;
     background-color: #f6f7f9;
+  }
+}
+
+@media (min-width: 780px) {
+  .css-ouos42 {
+    padding: 50px 32px 32px;
+  }
+  .css-127glno {
+    display: none;
   }
 }
