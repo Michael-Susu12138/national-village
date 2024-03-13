@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "bcryptjs-react": "^2.4.6",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^5.1.0",
     "cors": "^2.8.5",

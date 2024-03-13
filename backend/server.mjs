@@ -17,6 +17,7 @@ import cors from "cors";
 // import newsRoutes from "./routes/newsRoutes.mjs";
 // import authRoutes from "./routes/authRoutes.mjs";
 import restaurantRoutes from "./routes/restaurantRoutes.mjs";
+import userRoutes from "./routes/userRoutes.mjs";
 
 const app = express(); // create app instance
 
@@ -60,7 +61,7 @@ app.use(express.json());
 // api endpoints
 // news handeling
 app.use("/api/restaurant", restaurantRoutes);
-// app.use("/api/auth", authRoutes);
+app.use("/api/user", userRoutes);
 
 // TESTING DATA
 app.get("/", (req, res) => {

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import CreateRestaurantForm from "./test/RestaurantTest/CreateRestaurantForm";
 import SearchRestaurant from "./test/RestaurantTest/SearchRestaurant";
+import GoogleMapComp from "./test/GoogleMap/GoogleMapComp";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/register" element={<Register />} /> */}
         <Route path="/test-restaurantForm" element={<CreateRestaurantForm />} />
         <Route path="/test-restaurantSearch" element={<SearchRestaurant />} />
+        <Route path="/test-googleMap" element={<GoogleMapComp />} />
       </Routes>
     </Router>
   );
