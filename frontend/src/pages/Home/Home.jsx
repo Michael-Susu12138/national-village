@@ -1,6 +1,6 @@
 import Alert from "../../components/Alert/Alert";
 import Nav from "../../components/Nav/Nav";
-// import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
         <Nav />
       </Alert>
       {/* <Footer /> */}
+      <Footer></Footer>
     </>
   );
 };

@@ -112,19 +112,36 @@ const Footer = () => {
           </ul>
         </div>
         <div className="need-help">
-          <h2>Need Help?</h2>
+          <h3>Need Help?</h3>
           <ul>
+            <h2>Email one of our administrators at:</h2>
             <li>
-              <a href="https://help.studentbeans.com/hc/en-us">Support FAQs</a>
+              <h2>
+                Christ Chen: <a href="mailto:hc3539@nyu.edu">hc3539@nyu.edu</a>
+              </h2>
+            </li>
+            <li>
+              <h2>
+                Michael Chen: <a href="mailto:yc4557@nyu.edu">yc4557@nyu.edu</a>
+              </h2>
+            </li>
+            <li>
+              <h2>
+                Amanda Cuevas:{" "}
+                <a href="mailto:aac676@nyu.edu">aac676@nyu.edu</a>
+              </h2>
             </li>
           </ul>
         </div>
-        <div className="find-us">
-          <h2>Where to find us</h2>
+        <div className="about-us">
+          <h2>About Us!</h2>
           <p>
-            Student Beans is operated by The Beans Group. Registered in England
-            and Wales under company number 5486885. Registered office 1 Vincent
-            Square, London, SW1 2PN.
+            As three students living in New York City attending NYU Tandon,
+            Christ, Michael, and Amanda were always aware of the difficult
+            realities of being a broke student in an expensive modern world.
+            When the opportunity arrived, the first thing that came to mind was
+            the creation of a platform that might help to lessen that burden
+            just a little less!
           </p>
         </div>
       </div>
