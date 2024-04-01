@@ -22,7 +22,7 @@ const UserSchema = new mongoose.Schema(
     },
     fullName: {
       type: String,
-      required: true,
+      // required: true,
     },
     birthDate: {
       type: Date,
@@ -41,13 +41,13 @@ const UserSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      required: true,
+      // required: true,
       enum: ["user", "admin", "moderator"], // Specify user roles
       default: "user",
     },
     isActive: {
       type: Boolean,
-      required: true,
+      // required: true,
       default: true,
     },
     preferences: {

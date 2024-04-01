@@ -1,10 +1,12 @@
 import "./config.mjs";
 
 // auth config imports
-import passport from "./auth/authConfig.mjs";
+// import passport from "./auth/authConfig.mjs";
 
 import { log } from "console";
 import express from "express";
+import { default as passportConfig } from "./passports/passportConfig.mjs";
+
 // import session from "express-session";
 import flash from "connect-flash";
 // import MongoStore from "connect-mongo";
@@ -32,18 +34,15 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
 // authentications
-// app.use(
-//   session({
-//     secret: "your secret key",
-//     resave: false,
-//     saveUninitialized: true,
-//     store: MongoStore.create({ mongoUrl: process.env.DSN }),
-//     cookie: { secure: true }, // Set to true if using https
-//   })
-// );
 
-// app.use(passport.initialize());
-// app.use(passport.session());
+app.use(express.json()); // For parsing application/json
+app.use(passportConfig.initialize()); // Initialize Passport
+
+// Define your routes here, including the login route
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
 
 app.use(flash()); // for warnings
 
@@ -74,6 +73,12 @@ app.get("/api/data", (req, res) => {
   };
   res.json(data);
 });
+
+// app.post("/api/user/add", (req, res) => {
+//   return res
+//     .status(200)
+//     .json({ message: "Route reached successfully", data: req.body });
+// });
 
 // END TESTING DATA
 

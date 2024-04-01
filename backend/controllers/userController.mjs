@@ -1,4 +1,7 @@
-import bcrypt from "bcryptjs-react";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
+import { default as passportConfig } from "../passports/passportConfig.mjs";
+
 import db from "../db.mjs";
 
 const getAllUsers = async (req, res) => {
@@ -13,6 +16,7 @@ const getAllUsers = async (req, res) => {
 const createUser = async (req, res) => {
   try {
     const { email, username } = req.body;
+    // Consider adding more rigorous validation/sanitization for email and username here
     const existingUser = await db.User.findOne({
       $or: [{ email }, { username }],
     });
@@ -33,7 +37,11 @@ const createUser = async (req, res) => {
     const savedUser = await newUser.save();
     res.status(201).json(savedUser);
   } catch (err) {
-    res.status(500).send(err);
+    // Log the error for debugging purposes
+    console.error("Error creating user:", err);
+    res
+      .status(500)
+      .json({ message: "An error occurred while creating the user." });
   }
 };
 
@@ -76,27 +84,26 @@ const deleteUser = async (req, res) => {
   }
 };
 
-const loginUser = async (req, res) => {
-  try {
-    const { email, password } = req.body;
-    const user = await db.User.findOne({ email });
-
+// Assuming you're using express and this is part of your routes setup
+const loginUser = (req, res, next) => {
+  passportConfig.authenticate("local", (err, user, info) => {
+    if (err) {
+      return res.status(500).json({ message: "Error logging in", error: err });
+    }
     if (!user) {
-      return res.status(404).json({ message: "User not found" });
+      return res.status(404).json({ message: info.message });
     }
 
-    const validPassword = await bcrypt.compare(password, user.password);
-    if (!validPassword) {
-      return res.status(400).json({ message: "Invalid password" });
-    }
+    // You can also use req.login() here if you're using session-based authentication
+    // Generate a token as before
+    const token = jwt.sign(
+      { userId: user._id, email: user.email },
+      process.env.JWT_SECRET,
+      { expiresIn: "1h" }
+    );
 
-    // Ideally, generate a token for the user here
-    res
-      .status(200)
-      .json({ message: "Logged in successfully" /*, token: 'YourTokenHere'*/ });
-  } catch (err) {
-    res.status(500).json({ message: "Error logging in", error: err });
-  }
+    res.status(200).json({ message: "Logged in successfully", token: token });
+  })(req, res, next);
 };
 
 export { getAllUsers, createUser, updateUser, deleteUser, loginUser };
