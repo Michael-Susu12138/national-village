@@ -8,6 +8,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import bannerLogo from "/src/assets/National-Village-Banner-Logo.png";
+import nyuLogo from "/src/assets/NYU_Long_RGB_Color.png";
 
 const Footer = () => {
   return (
@@ -20,9 +21,7 @@ const Footer = () => {
         </Link>
         <ul className="social-links">
           <li>
-            <a href="https://instagram.com/studentbeans">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
+            <img src={nyuLogo} alt="NYU Logo"></img>
           </li>
           <li>
             <a href="https://www.tiktok.com/@studentbeans">
