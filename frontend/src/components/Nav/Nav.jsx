@@ -54,7 +54,7 @@ function Nav() {
                     decoding="async"
                     data-nimg="1"
                     className="css-0"
-                    src="../src/assets/National VIillage Header Logo.png"
+                    src="../src/assets/NVLogo.png"
                   />
                 </a>
               </li>
