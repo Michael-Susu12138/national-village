@@ -1,30 +1,46 @@
 import "./Footer.css";
 import { Link } from "react-router-dom"; // Assuming you're using react-router for navigation
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faTiktok,
-  faTwitter,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
 import bannerLogo from "/src/assets/National-Village-Banner-Logo.png";
 import nyuLogo from "/src/assets/NYU_Long_RGB_Color.png";
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-top">
-        <Link to="/">
-          <h>
-            <img src={bannerLogo} alt="Banner Logo"></img>
-          </h>
-        </Link>
-        <ul className="social-links">
-          <li>
-            <img src={nyuLogo} alt="NYU Logo"></img>
-          </li>
-        </ul>
+        <Container>
+          <Row>
+            <Col className="d-flex align-items-center justify-content-center">
+              <img
+                src={bannerLogo}
+                alt="Banner Logo"
+                className="img-fluid"
+                style={{
+                  height: "auto",
+                  objectFit: "contain",
+                  maxHeight: "100px",
+                }}
+              />
+            </Col>
+            <Col className="d-flex align-items-center justify-content-center">
+              <img
+                src={nyuLogo}
+                alt="NYU Logo"
+                className="img-fluid"
+                style={{
+                  height: "auto",
+                  objectFit: "contain",
+                  maxHeight: "100px",
+                }}
+              />
+            </Col>
+          </Row>
+        </Container>
       </div>
+
       <div className="footer-middle">
         <div className="work-with-us">
           <h2>Work With Us</h2>
@@ -127,26 +143,6 @@ const Footer = () => {
             the creation of a platform that might help to lessen that burden
             just a little less!
           </p>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <div className="app-promo">
-          <a href="https://itunes.apple.com/us/app/apple-store/id994482161?pt=10031819&ct=studentbeans-app_page&mt=8">
-            <img
-              alt="Download on the App Store"
-              src="https://cdn.studentbeans.com/static/web/assets/images/apps/ios_en.svg"
-              width="135"
-              height="45"
-            />
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.studentbeans.studentbeans&hl=us&referrer=utm_source%3Dstudentbeans%26utm_medium%3Dapp_page">
-            <img
-              alt="Get it on Google Play"
-              src="https://cdn.studentbeans.com/static/web/assets/images/apps/android_en.png"
-              width="135"
-              height="45"
-            />
-          </a>
         </div>
       </div>
     </div>

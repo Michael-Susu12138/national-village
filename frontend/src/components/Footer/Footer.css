@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.banner-logo {
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
 /* body {
   font-family: Gibson, Helvetica, Arial, sans-serif;
   font-size: 16px;
