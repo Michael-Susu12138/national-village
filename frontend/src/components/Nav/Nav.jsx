@@ -42,7 +42,7 @@ function Nav() {
                     decoding="async"
                     data-nimg="1"
                     className="css-0"
-                    src="https://cdn.studentbeans.com/static/web/assets/images/sb_dark_logo.svg"
+                    src=""
                   />
                 </a>
                 <a href="/us" data-testid="nav-log" className="css-zffja8">
@@ -50,11 +50,11 @@ function Nav() {
                     alt="Student Beans"
                     loading="lazy"
                     width="172"
-                    height="36"
+                    height="50"
                     decoding="async"
                     data-nimg="1"
                     className="css-0"
-                    src="https://cdn.studentbeans.com/static/web/assets/images/sb_dark_logo.svg"
+                    src="../src/assets/National VIillage Header Logo.png"
                   />
                 </a>
               </li>
@@ -73,7 +73,7 @@ function Nav() {
                         height="22"
                         decoding="async"
                         data-nimg="1"
-                        className="css-0"
+                        className="css-1"
                         src="https://cdn.studentbeans.com/static/web/assets/images/flags/us.svg"
                       />
                     </div>
@@ -344,7 +344,7 @@ function Nav() {
                     data-testid="nav-category-food-drink"
                     className="css-lo4idg"
                   >
-                    Food &amp; Drink
+                    NYU Tandon
                   </a>
                 </li>
                 <li className="css-17b3rz5">
@@ -353,7 +353,7 @@ function Nav() {
                     data-testid="nav-category-fashion"
                     className="css-lo4idg"
                   >
-                    Fashion
+                    NYU Stern
                   </a>
                 </li>
                 <li className="css-17b3rz5">
@@ -362,7 +362,7 @@ function Nav() {
                     data-testid="nav-category-tech-mobile"
                     className="css-lo4idg"
                   >
-                    Tech &amp; Mobile
+                    NYU Shanghai
                   </a>
                 </li>
                 <li className="css-17b3rz5">
@@ -371,7 +371,7 @@ function Nav() {
                     data-testid="nav-category-health-beauty"
                     className="css-lo4idg"
                   >
-                    Health &amp; Beauty
+                    NYU Abu Dhabi
                   </a>
                 </li>
                 <li className="css-17b3rz5">
@@ -380,7 +380,7 @@ function Nav() {
                     data-testid="nav-category-entertainment"
                     className="css-lo4idg"
                   >
-                    Entertainment
+                    NYU Paris
                   </a>
                 </li>
                 <li className="css-17b3rz5">
@@ -389,7 +389,7 @@ function Nav() {
                     data-testid="nav-category-home-utilities"
                     className="css-lo4idg"
                   >
-                    Home &amp; Utilities
+                    NYU London
                   </a>
                 </li>
                 <li className="css-17b3rz5">
@@ -398,7 +398,7 @@ function Nav() {
                     data-testid="nav-category-travel"
                     className="css-lo4idg"
                   >
-                    Travel
+                    NYU Madrid
                   </a>
                 </li>
                 <li className="css-1a45p86">

@@ -1,5 +1,4 @@
 import "./Footer.css";
-import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -43,7 +42,7 @@ const Footer = () => {
               </p>
               <p style={{ fontSize: "0.8rem" }}>
                 <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
-                "Contact Emails pending"
+                Contact Emails pending
               </p>
               <p style={{ fontSize: "0.8rem" }}>
                 <FontAwesomeIcon className="mr-2" icon={faPhone} /> +1 (561)
