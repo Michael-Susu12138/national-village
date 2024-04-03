@@ -23,21 +23,6 @@ const Footer = () => {
           <li>
             <img src={nyuLogo} alt="NYU Logo"></img>
           </li>
-          <li>
-            <a href="https://www.tiktok.com/@studentbeans">
-              <FontAwesomeIcon icon={faTiktok} />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/studentbeans">
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCOzbkB9fkAq-33KLiRpQlyQ">
-              <FontAwesomeIcon icon={faYoutube} />
-            </a>
-          </li>
         </ul>
       </div>
       <div className="footer-middle">

@@ -21,14 +21,14 @@
 
   width: 100%;
   text-align: left;
-  background-color: #6523e3;
+  background-color: #edf4ec;
   z-index: 1;
 
   font-family: Gibson, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #ffffff;
-  background-color: #6523e3; /* Set the main background color */
+  color: #edf4ec;
+  background-color: #edf4ec; /* Set the main background color */
 }
 
 .footer-middle,
