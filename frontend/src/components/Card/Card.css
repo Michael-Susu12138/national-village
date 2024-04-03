@@ -1,23 +1,68 @@
-.card {
-  width: 252px;
-  height: 245px;
-  background: white;
-  border-radius: 30px;
+.body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0px auto;
+  margin-top: 8vh;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 230px;
   box-shadow:
     15px 15px 30px #bebebe,
     -15px -15px 30px #ffffff;
   transition: 0.2s ease-in-out;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  width: 250px;
+  height: 230px;
+  box-shadow:
+    15px 15px 30px #bebebe,
+    -15px -15px 30px #ffffff;
+  transition: 0.2s ease-in-out;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  width: 250px;
+  height: 230px;
+  box-shadow:
+    15px 15px 30px #bebebe,
+    -15px -15px 30px #ffffff;
+  transition: 0.2s ease-in-out;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .img {
   width: 100%;
   height: 50%;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
   background: linear-gradient(#e66465, #9198e5);
   display: flex;
-  align-items: top;
   justify-content: right;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .save {
@@ -82,7 +127,9 @@
   color: #9198e5;
 }
 
-.card:hover {
+.card1:hover,
+.card2:hover,
+.card3:hover {
   cursor: pointer;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -93,4 +140,36 @@
 
 .save:hover .svg {
   fill: #ced8de;
+}
+
+.icon-box svg {
+  enable-background: new 0 0 512.001 512.001;
+}
+
+.svg2 {
+  mask-type: luminance;
+}
+
+.color1 {
+  fill: #3d6687;
+}
+
+.color2 {
+  fill: #ccdfed;
+}
+
+.color3 {
+  fill: #bad5e5;
+}
+
+.color4 {
+  fill: #61aff6;
+}
+
+.color5 {
+  fill: #399aea;
+}
+
+.color6 {
+  fill: #ffffff;
 }
