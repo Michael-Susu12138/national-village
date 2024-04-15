@@ -33,18 +33,7 @@ function Nav() {
           <nav className="css-i3rj5z">
             <ul className="css-leg12c2">
               <li>
-                <a href="/us" data-testid="nav-log" className="css-16w85wl">
-                  <img
-                    alt="Student Beans"
-                    loading="lazy"
-                    width="152"
-                    height="24"
-                    decoding="async"
-                    data-nimg="1"
-                    className="css-0"
-                    src=""
-                  />
-                </a>
+                <a href="/us" data-testid="nav-log" className="css-16w85wl"></a>
                 <a href="/us" data-testid="nav-log" className="css-zffja8">
                   <img
                     alt="Student Beans"
@@ -163,15 +152,6 @@ function Nav() {
                     🎓
                   </span>
                   Graduate Discounts
-                </a>
-              </li>
-              <li className="css-zffja8">
-                <a
-                  href="https://www.studentbeans.com/blog/us/"
-                  data-testid="nav-blog"
-                  className="css-u2nkub"
-                >
-                  Blog
                 </a>
               </li>
               <li className="css-zffja8">

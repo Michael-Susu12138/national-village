@@ -27,14 +27,13 @@ function App() {
         <Route path="/login" element={<Login />} /> */}
 
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} /> */}
+        <Route path="/register" element={<Register />} />
         <Route path="/test-restaurantForm" element={<CreateRestaurantForm />} />
         <Route path="/test-restaurantSearch" element={<SearchRestaurant />} />
         <Route path="/test-googleMap" element={<GoogleMapComp />} />
         <Route path="/test-user" element={<UserList />} />
         <Route path="/test-userAdd" element={<AddUser />} />
         <Route path="/test-userLogin" element={<LoginUser />} />
-
       </Routes>
     </Router>
   );
