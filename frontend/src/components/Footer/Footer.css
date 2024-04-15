@@ -5,10 +5,13 @@ a {
 
 img {
   display: block;
-  vertical-align: middle;
   border: 0;
   max-width: unset !important;
   height: auto;
+}
+
+.css-0 {
+  color: transparent;
 }
 
 .w-full {
@@ -19,9 +22,8 @@ img {
   text-align: left;
 }
 
-.big-violet-500 {
-  --tw-bg-capacity: 1;
-  background-color: rgb(101 35 227 / var(--tw-bg-opacity));
+footer {
+  background-color: rgb(101 35 227);
 }
 
 .z-1 {
@@ -33,9 +35,19 @@ img {
   margin-bottom: 0;
 }
 
+.my-2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-2 {
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .flex {
@@ -72,7 +84,7 @@ ul {
   display: inline-block;
 }
 
-.gap-y-2 {
+.gap-y-7 {
   row-gap: 40px;
 }
 
@@ -82,6 +94,49 @@ ul {
 
 .grid {
   display: grid;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+
+.border-liquorice-350 {
+  --tw-border-opacity: 1;
+  border-color: rgb(112 115 115 / var(--tw-border-opacity));
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-\[0\.5px\] {
+  border-width: 0.5px;
+}
+
+.h-1 {
+  height: 2px;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.my-\[10px\] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text-liquorice-200 {
+  --tw-text-opacity: 1;
+  color: rgb(210 214 214 / var(--tw-text-opacity));
+}
+
+.leading-\[1\.25em\] {
+  line-height: 1.25em;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .css-jax8d3 {
@@ -106,6 +161,18 @@ ul {
   line-height: 1.5em;
   color: #d2d6d6;
   font-size: 15px;
+}
+
+.css-wmtufr {
+  margin: 1;
+  font-family:
+    Gibson,
+    Helvetica,
+    Arial,
+    Sans Serif;
+  line-height: 1.5em;
+  color: #d2d6d6;
+  font-size: 12px;
 }
 
 @media (min-width: 780px) {
@@ -142,10 +209,16 @@ ul {
     padding-right: 24px;
   }
   .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .md\:gap-x-2 {
     column-gap: 4px;
+  }
+  .lg\:grid-cols-subgrid {
+    grid-template-columns: subgrid;
+  }
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 }
 

@@ -2,22 +2,9 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="w-full text-left z-1 bg-violet-500">
-      <div className="max-w-[580px] my-0 mx-auto lg:max-w-[1250px] lg:w-[88.333%]">
+    <footer className="w-full text-left z-1">
+      <div className="my-0 mx-auto lg:max-w-[1250px] lg:w-[88.333%]">
         <div className="flex flex-col my-0 mx-auto py-7 px-[30px] md:px-4 md:pb-[50px] md:items-center lg:px-[20px] lg:pb-[35px] lg:flex-row lg:justify-between ">
-          <a href="/us">
-            <img
-              alt="Student Beans logo"
-              loading="lazy"
-              width="163.5"
-              height="28"
-              decoding="async"
-              data-nimg="1"
-              className="css-0"
-              //   style="color:transparent"
-              src="../../assets/NVLogo.png"
-            />
-          </a>
           <ul className="flex list-none m-0 p-0">
             <li className="inline-block pl-2 leading-none">
               <a href="https://instagram.com/studentbeans">
@@ -199,257 +186,23 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex order-last lg:block lg:grid-cols-subgrid lg:col-span-2 lg:order-none">
-            <div className="flex-shrink-0 xl:mt-0 pb-3">
-              <div className="flex p-4 bg-violet-400 rounded-4 justify-center items-center max-w-fit">
-                <div data-testid="app-promo-box" className="css-zohvoo">
-                  <div className="css-1ka039p">
-                    <a
-                      href="https://itunes.apple.com/us/app/apple-store/id994482161?pt=10031819&amp;ct=studentbeans-app_page&amp;mt=8"
-                      className="css-1d2d8y"
-                    >
-                      <img
-                        alt="Download on the App Store"
-                        loading="lazy"
-                        width="135"
-                        height="45"
-                        decoding="async"
-                        data-nimg="1"
-                        className="css-4ejps8"
-                        // style="color:transparent"
-                        src="https://cdn.studentbeans.com/static/web/assets/images/apps/ios_en.svg"
-                      />
-                    </a>
-                    <div>
-                      <div className="css-16vmvyd">
-                        <div className="css-1frmy32">4.8</div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                      </div>
-                      <div className="css-11zxaew">32.6K ratings</div>
-                    </div>
-                  </div>
-                  <div className="css-1ka039p">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.studentbeans.studentbeans&amp;hl=us&amp;referrer=utm_source%3Dstudentbeans%26utm_medium%3Dapp_page"
-                      className="css-1d2d8y"
-                    >
-                      <img
-                        alt="Get it on Google Play"
-                        loading="lazy"
-                        width="135"
-                        height="45"
-                        decoding="async"
-                        data-nimg="1"
-                        className="css-4ejps8"
-                        // style="color:transparent"
-                        src="https://cdn.studentbeans.com/static/web/assets/images/apps/android_en.png"
-                      />
-                    </a>
-                    <div>
-                      <div className="css-16vmvyd">
-                        <div className="css-1frmy32">4.8</div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                        <div className="css-2s5vqp">
-                          <img
-                            alt="star rating"
-                            loading="lazy"
-                            width="11"
-                            height="11"
-                            decoding="async"
-                            data-nimg="1"
-                            className="css-0"
-                            // style="color:transparent"
-                            src="https://cdn.studentbeans.com/static/web/assets/images/app_rating_star.svg"
-                          />
-                        </div>
-                      </div>
-                      <div className="css-11zxaew">15.3K ratings</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="whitespace-pre-line lg:grid-cols-subgrid lg:col-span-3">
             <h2 className="css-jax8d3">Where to find us</h2>
             <p className="css-hzehox">
-              Student Beans is operated by The Beans Group. Registered in
-              England and Wales under company number 5486885. Registered office
-              1 Vincent Square, London, SW1 2PN.
+              National Village is operated by The Team A20. Registered in
+              Computer Science Department under New York University. Registered
+              office 6 MetroTech Center, Brooklyn, NY 11201.
             </p>
           </div>
         </div>
         <div className="max-w-[1250px] my-0 mx-auto py-0 px-4">
           <div className="h-1 border-[0.5px] border-solid border-liquorice-350 my-2 mx-auto"></div>
           <div className="flex flex-col-reverse items-center md:flex-row md:justify-between">
-            <p className="css-wmtufr">© 2024 Student Beans</p>
-            <div className="flex items-center my-[10px] mx-2">
-              <p className="m-0 leading-[1.25em] text-grey-500 text-[12px] font-gibson text-liquorice-200 mr-3">
-                Select your country
-              </p>
-              <div className="py-2 px-[10px] border-2 border-solid border-grey-350 rounded-2">
-                <a
-                  className="group flex items-center"
-                  data-testid="country-link-footer"
-                  href="/us/country-links"
-                >
-                  <div
-                    data-testid="icon"
-                    className="inline-block overflow-hidden rounded-1 leading-[0] align-top"
-                  >
-                    <img
-                      alt=""
-                      loading="lazy"
-                      width="30"
-                      height="22"
-                      decoding="async"
-                      data-nimg="1"
-                      className="css-0"
-                      //   style="color:transparent"
-                      src="https://cdn.studentbeans.com/static/web/assets/images/flags/us.svg"
-                    />
-                  </div>
-                  <svg
-                    viewBox="0 0 7 10"
-                    width="10"
-                    height="10"
-                    role="img"
-                    aria-label="Country list dropdown icon"
-                    aria-hidden="true"
-                    focusable="false"
-                    fill="none"
-                    className="rotate-90 ml-3 group-hover:stroke-white-300 stroke-liquorice-300"
-                  >
-                    <path
-                      d="M1.86877 1.46001L5.76154 4.96484L1.86877 8.46"
-                      stroke="inherit"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
+            <p className="css-wmtufr">© 2024 National Village</p>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
