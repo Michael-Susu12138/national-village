@@ -21,10 +21,12 @@ const LoginUser = () => {
     setError(""); // Reset error message
 
     try {
-      // Replace 'http://localhost:3000/api/login' with your actual login API endpoint
       const response = await axios.post(
         `${import.meta.env.VITE_API}api/user/login`,
-        credentials
+        credentials,
+        {
+          withCredentials: true, // This ensures credentials are included with the request
+        }
       );
       console.log(response.data); // Process login success (e.g., redirect, store token)
       // Redirect to another page or update state accordingly

@@ -9,25 +9,41 @@ import {
 
 const router = express.Router();
 
-// Retrieve all users
-router.get("/", getAllUsers);
+// Middleware to ensure the user is authenticated
+const ensureAuthenticated = (req, res, next) => {
+  if (req.session.isAuthenticated) {
+    return next(); // Continue to the next middleware/route handler
+  }
+  console.log(req.session);
+  // If not authenticated, send an unauthorized response
+  res.status(401).json({ message: "Unauthorized" });
+};
 
-// Add a new user
+// console.log(ensureAuthenticated)
+// Retrieve all users - Assuming this needs authentication
+router.get("/", ensureAuthenticated, getAllUsers);
+
+// Add a new user - Typically open for everyone
 router.post("/add", createUser);
 
-// Update an existing user
-// Assuming update details are passed in the body
-router.put("/update", updateUser);
+// Update an existing user - Requires authentication
+router.put("/update", ensureAuthenticated, updateUser);
 
-// Delete a user
-// This could be done by email or a unique identifier passed in the body
-router.delete("/delete", deleteUser);
+// Delete a user - Requires authentication
+router.delete("/delete", ensureAuthenticated, deleteUser);
 
-// Login a user
+// Login a user - Open for everyone
 router.post("/login", loginUser);
 
-// You could also include middleware for authentication before certain routes if needed, similar to the commented isAuthenticated function
-// For example, using isAuthenticated middleware on routes that require a user to be logged in:
-// router.get("/secure-route", isAuthenticated, someSecureFunction);
+// Example of adding a logout route, which also requires authentication
+router.get("/logout", ensureAuthenticated, (req, res) => {
+  req.session.destroy((err) => {
+    if (err) {
+      return res.status(500).json({ message: "Error logging out", error: err });
+    }
+    res.status(200).json({ message: "Logged out successfully" });
+  });
+});
 
+// More routes can be added here with or without the ensureAuthenticated middleware based on the need for protection
 export default router;

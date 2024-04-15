@@ -85,6 +85,27 @@ const deleteUser = async (req, res) => {
 };
 
 // Assuming you're using express and this is part of your routes setup
+// const loginUser = (req, res, next) => {
+//   passportConfig.authenticate("local", (err, user, info) => {
+//     if (err) {
+//       return res.status(500).json({ message: "Error logging in", error: err });
+//     }
+//     if (!user) {
+//       return res.status(404).json({ message: info.message });
+//     }
+
+//     // You can also use req.login() here if you're using session-based authentication
+//     // Generate a token as before
+//     const token = jwt.sign(
+//       { userId: user._id, email: user.email },
+//       process.env.JWT_SECRET,
+//       { expiresIn: "1h" }
+//     );
+
+//     res.status(200).json({ message: "Logged in successfully", token: token });
+//   })(req, res, next);
+// };
+
 const loginUser = (req, res, next) => {
   passportConfig.authenticate("local", (err, user, info) => {
     if (err) {
@@ -94,15 +115,13 @@ const loginUser = (req, res, next) => {
       return res.status(404).json({ message: info.message });
     }
 
-    // You can also use req.login() here if you're using session-based authentication
-    // Generate a token as before
-    const token = jwt.sign(
-      { userId: user._id, email: user.email },
-      process.env.JWT_SECRET,
-      { expiresIn: "1h" }
-    );
+    // Establishing a session upon successful authentication
+    req.session.user = { id: user._id, email: user.email }; // Store essential user info in session
 
-    res.status(200).json({ message: "Logged in successfully", token: token });
+    req.session.isAuthenticated = true; // Flag to easily check the login status
+    console.log(req.session);
+
+    res.status(200).json({ message: "Logged in successfully" });
   })(req, res, next);
 };
 

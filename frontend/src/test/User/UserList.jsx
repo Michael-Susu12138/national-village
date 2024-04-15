@@ -6,7 +6,9 @@ const UserList = () => {
 
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_API}api/user`)
+      .get(`${import.meta.env.VITE_API}api/user`, {
+        withCredentials: true, // This tells Axios to send the cookie with the request
+      })
       .then((response) => {
         setUsers(response.data);
       })
