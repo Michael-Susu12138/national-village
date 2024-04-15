@@ -1,7 +1,7 @@
 import Alert from "../../components/Alert/Alert";
 import Nav from "../../components/Nav/Nav";
 import Card from "../../components/Card/Card";
-// import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer/RealFooter";
 
 const Home = () => {
   return (
@@ -9,9 +9,9 @@ const Home = () => {
       <Alert />
       <Nav />
       <Card />
-      <Card />
-      <Card />
-      {/* <Footer /> */}
+      {/* <Card /> */}
+      {/* <Card /> */}
+      <Footer />
     </>
   );
 };
