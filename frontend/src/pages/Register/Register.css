@@ -94,8 +94,11 @@ body {
 }
 
 .css-10qpvih {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 50%;
 }
 
 .css-2sstpbq {
@@ -268,11 +271,11 @@ body {
 }
 
 .css-1d0nbku {
-  margin-top: 24px;
+  margin-top: 0;
 }
 
 .css-1fgdcyd {
-  margin-bottom: 24px;
+  margin-bottom: 44px;
 }
 
 form {
@@ -351,7 +354,7 @@ form {
 }
 
 .css-2ji8uu {
-  margin-top: 1.25em;
+  margin-top: 1em;
 }
 
 .css-1j1xijh {
