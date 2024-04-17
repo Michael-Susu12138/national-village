@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function Slideshow() {
-  return <h2>Hi, I am a Slideshow!</h2>;
+  return <h2> Hi, I am a Slideshow!</h2>;
 }
 
 export default Slideshow;
