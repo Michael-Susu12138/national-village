@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 500px; /* Adjust height as needed */
-  background-image: url(../../assets/foodbowl.jpg); /* Replace 'your-image-url.jpg' with the URL of your background image */
+  background-image: url(../../assets/foodbowl.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -27,7 +27,7 @@
 .overlay button {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #007bff; /* Adjust button styles as needed */
+  background-color: #007bff;
   border: none;
   color: white;
   cursor: pointer;
@@ -35,4 +35,8 @@
 
 .overlay button:hover {
   background-color: #0056b3;
+}
+
+.village {
+  color: blue;
 }
