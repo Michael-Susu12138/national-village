@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 
 import Register from "./pages/Register/Register";
-import Login from "./pages/Login/Login";
+// import Login from "./pages/Login/Login";
 import Tandon from "./pages/Tandon/Tandon";
 import Detail from "./pages/Detail/Detail";
 
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/tandon" element={<Tandon />} />
         <Route path="/detail" element={<Detail />} />
         {/* <Route path="/add" element={<AddNews />} />
@@ -30,7 +30,7 @@ function App() {
 
         <Route path="/login" element={<Login />} /> */}
 
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/register" element={<Register />} />
         <Route path="/test-restaurantForm" element={<CreateRestaurantForm />} />
         <Route path="/test-restaurantSearch" element={<SearchRestaurant />} />

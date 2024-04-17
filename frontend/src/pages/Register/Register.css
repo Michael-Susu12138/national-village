@@ -6,7 +6,16 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+html,
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   min-height: 100vh;
   height: auto;
@@ -182,7 +191,7 @@ body {
   position: relative;
   overflow: visible;
   background-color: rgb(246, 247, 249);
-  padding: 0px 15px 75px;
+  padding: 0px 15px 286px;
 }
 
 .css-f076qf {
@@ -389,6 +398,11 @@ form {
   line-height: 1.5em;
   color: rgb(7, 31, 69);
   font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
 }
 
 @media (min-width: 1100px) {

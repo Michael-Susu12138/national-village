@@ -1,11 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Register.css";
-import React, { useState } from "react";
+import "../../components/Footer/Footer.css";
+import { useState } from "react";
 
 const Register = () => {
+  const [isLogin, setIsLogin] = useState(false);
+
+  const toggleForm = (formType) => {
+    console.log("Form switched to:", !isLogin ? "Login" : "Register");
+    setIsLogin(formType === "login");
+  };
+
   return (
     <>
-      {/* <div className="css-111aaa">hello</div> */}
       <div className="css-1y5im6x">
         <div className="css-1y5im6y">
           <div className="css-1y5im6z">
@@ -31,14 +38,16 @@ const Register = () => {
               <button
                 tabIndex={-1}
                 className="css-3dxqqo"
-                data-element="button"
+                data-element="Register"
+                onClick={() => toggleForm("register")}
               >
-                Resgiter
+                Register
               </button>
               <button
                 tabIndex={0}
                 className="css-1qhaazl"
-                data-element="button"
+                data-element="Login"
+                onClick={() => toggleForm("login")}
               >
                 Log in
               </button>
@@ -118,6 +127,17 @@ const Register = () => {
           </div>
         </div>
       </div>
+
+      <footer className="w-full text-left z-1">
+        <div className="my-0 mx-auto lg:max-w-[1250px] lg:w-[88.333%]">
+          <div className="max-w-[1250px] my-0 mx-auto py-0 px-4">
+            <div className="h-1 border-[0.5px] border-solid border-liquorice-350 my-2 mx-auto"></div>
+            <div className="flex flex-col-reverse items-center md:flex-row md:justify-between">
+              <p className="css-wmtufr">© 2024 National Village</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
