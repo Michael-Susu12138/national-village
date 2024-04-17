@@ -33,8 +33,8 @@ function Nav() {
           <nav className="css-i3rj5z">
             <ul className="css-leg12c2">
               <li>
-                <a href="/us" data-testid="nav-log" className="css-16w85wl"></a>
-                <a href="/us" data-testid="nav-log" className="css-zffja8">
+                <a href="/" data-testid="nav-log" className="css-16w85wl"></a>
+                <a href="/" data-testid="nav-log" className="css-zffja8">
                   <img
                     alt="Student Beans"
                     loading="lazy"
@@ -155,11 +155,7 @@ function Nav() {
                 </a>
               </li>
               <li className="css-zffja8">
-                <a
-                  href="https://accounts.studentbeans.com/oauth/authorize?country=us&amp;response_type=token&amp;client_id=e55920fd-5410-4534-b926-b1214c85f64a&amp;redirect_uri=https://www.studentbeans.com/users/auth/studentbeans/callback&amp;user_return_to=https%3A%2F%2Fwww.studentbeans.com%2Fus&amp;auth_path=log-in&amp;consumer_group=student"
-                  data-testid="nav-login"
-                  className="css-u2nkub"
-                >
+                <a href="/login" data-testid="nav-login" className="css-u2nkub">
                   Login
                 </a>
               </li>
@@ -208,16 +204,13 @@ function Nav() {
             <div className="css-cn4vi6">
               <a
                 className="css-b201hx"
-                href="https://accounts.studentbeans.com/oauth/authorize?country=us&amp;response_type=token&amp;client_id=e55920fd-5410-4534-b926-b1214c85f64a&amp;redirect_uri=https://www.studentbeans.com/users/auth/studentbeans/callback&amp;user_return_to=https%3A%2F%2Fwww.studentbeans.com%2Fus&amp;auth_path=sign-up&amp;consumer_group=student"
+                href="/register"
                 type="button"
                 target="_self"
               >
                 <span className="css-xfi4js">Register</span>
               </a>
-              <a
-                href="https://accounts.studentbeans.com/oauth/authorize?country=us&amp;response_type=token&amp;client_id=e55920fd-5410-4534-b926-b1214c85f64a&amp;redirect_uri=https://www.studentbeans.com/users/auth/studentbeans/callback&amp;user_return_to=https%3A%2F%2Fwww.studentbeans.com%2Fus&amp;auth_path=log-in&amp;consumer_group=student"
-                className="css-1eraa3y"
-              >
+              <a href="/login" className="css-1eraa3y">
                 Login
               </a>
             </div>
@@ -302,7 +295,7 @@ function Nav() {
               <ul className="css-g00pq8">
                 <li className="css-17b3rz5">
                   <a
-                    href="/us/trending-discounts?source=nav"
+                    href="/"
                     data-testid="nav-category-trending-now"
                     className="css-lo4idg"
                   >
@@ -311,7 +304,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/all?source=nav"
+                    href="/"
                     data-testid="nav-category-all"
                     className="css-lo4idg"
                   >
@@ -320,7 +313,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/food-drink?source=nav"
+                    href="/tandon"
                     data-testid="nav-category-food-drink"
                     className="css-lo4idg"
                   >
@@ -329,7 +322,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/fashion?source=nav"
+                    href="/other"
                     data-testid="nav-category-fashion"
                     className="css-lo4idg"
                   >
@@ -338,7 +331,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/tech-mobile?source=nav"
+                    href="/other"
                     data-testid="nav-category-tech-mobile"
                     className="css-lo4idg"
                   >
@@ -347,7 +340,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/health-beauty?source=nav"
+                    href="/other"
                     data-testid="nav-category-health-beauty"
                     className="css-lo4idg"
                   >
@@ -356,7 +349,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/entertainment?source=nav"
+                    href="/other"
                     data-testid="nav-category-entertainment"
                     className="css-lo4idg"
                   >
@@ -365,7 +358,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/home-utilities?source=nav"
+                    href="/other"
                     data-testid="nav-category-home-utilities"
                     className="css-lo4idg"
                   >
@@ -374,7 +367,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/travel?source=nav"
+                    href="/other"
                     data-testid="nav-category-travel"
                     className="css-lo4idg"
                   >

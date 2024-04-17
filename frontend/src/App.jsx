@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 
 import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
+import Tandon from "./pages/Tandon/Tandon";
 
 import CreateRestaurantForm from "./test/RestaurantTest/CreateRestaurantForm";
 import SearchRestaurant from "./test/RestaurantTest/SearchRestaurant";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/tandon" element={<Tandon />} />
         {/* <Route path="/add" element={<AddNews />} />
         <Route path="/contact" element={<Contact />} />
 
