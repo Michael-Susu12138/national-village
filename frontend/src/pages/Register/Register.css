@@ -29,6 +29,8 @@ body {
 }
 
 .css-1y5im6x {
+  display: flex;
+  justify-content: center;
   position: relative;
   background-color: rgb(246, 247, 249);
 }
@@ -82,24 +84,18 @@ body {
   margin-left: 8px !important;
 }
 
-.css-1j1xijh {
-}
-
-.css-1klt2ma {
-}
-
 .css-1bijsj2 {
   float: left;
   position: relative;
-  width: 50%;
-  padding: 10px;
-  padding-right: 10px;
+  width: 66.6667%;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
   text-align: center;
 }
 
 .css-10qpvih {
-  height: 27px;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
 }
 
 .css-2sstpbq {
@@ -233,6 +229,19 @@ body {
   font-weight: 600;
 }
 
+.css-1qhaazl {
+  margin: 0px;
+  overflow: visible;
+  line-height: normal;
+  width: 50%;
+  padding: 18px 2px 14px;
+  text-decoration: none;
+  border: none;
+  background: rgb(224, 228, 235);
+  color: rgb(107, 122, 148);
+  box-shadow: rgba(7, 31, 69, 0.05) 4px -4px 5px inset;
+}
+
 .css-ouos42 {
   position: relative;
   width: 100%;
@@ -260,6 +269,10 @@ body {
 
 .css-1d0nbku {
   margin-top: 24px;
+}
+
+.css-1fgdcyd {
+  margin-bottom: 24px;
 }
 
 form {
@@ -312,13 +325,17 @@ form {
   height: 46px;
   padding: 0px 12px;
   margin: 0px;
-  font-size: 16px;
+  width: 90%;
   font-family: Gibson, Helvetica, Arial, "Sans Serif";
   line-height: 24px;
   color: rgb(7, 31, 69);
   border-radius: 5px;
   border: 1px solid rgb(224, 228, 235);
   background: rgb(239, 241, 245);
+}
+
+.css-1ajuzyj {
+  font-size: 30px;
 }
 
 .css-koxizw {
@@ -348,8 +365,7 @@ form {
   text-align: center;
   cursor: pointer;
   transition: background-color 200ms ease 0s;
-  width: 100%;
-  display: flex;
+  width: 90%;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -361,6 +377,7 @@ form {
   text-align: center;
   padding: 0px 30px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .css-19xlmcl {
