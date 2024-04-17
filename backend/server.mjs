@@ -33,6 +33,7 @@ app.use(express.static(path.join(_dirname, ".", "public")));
 app.use(
   cors({
     origin: process.env.FRONT_END, // Adjust this to your front-end's origin
+    // origin: "http://localhost:5173",
     credentials: true, // This is essential for cookies to be sent
   })
 );
@@ -64,11 +65,6 @@ app.use(
     },
   })
 );
-
-// Note: Using `secure: true` for cookies requires HTTPS
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
-});
 
 app.use(flash()); // for warnings
 
