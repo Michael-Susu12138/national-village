@@ -1,16 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Register.css";
 import "../../components/Footer/Footer.css";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Register = () => {
-  const [isLogin, setIsLogin] = useState(false);
-
-  const toggleForm = (formType) => {
-    console.log("Form switched to:", !isLogin ? "Login" : "Register");
-    setIsLogin(formType === "login");
-  };
-
   return (
     <>
       <div className="css-1y5im6x">
@@ -35,24 +28,22 @@ const Register = () => {
         <div className="css-dc7ee6">
           <div className="css-f076qf">
             <div role="tablist" className="css-zjik7">
-              <button
-                tabIndex={-1}
-                className="css-3dxqqo"
-                data-element="Register"
-                onClick={() => toggleForm("register")}
-              >
+              <button className="css-3dxqqo" data-element="Register">
                 Register
               </button>
-              <button
-                tabIndex={0}
-                className="css-1qhaazl"
-                data-element="Login"
-                onClick={() => toggleForm("login")}
-              >
-                Log in
+              <button className="css-1qhaazl" data-element="Login">
+                <Link to="/login">Log in</Link>
               </button>
             </div>
             <div className="css-ouos42">
+              <div className="css-1kawphh">
+                <h2 className="css-1b21cc6">Hello Again!</h2>
+              </div>
+              <div>
+                <p className="css-11biiks">
+                  Log in to your National Village account
+                </p>
+              </div>
               <div className="css-1d0nbku">
                 <div className="css-1fgdcyd">
                   <h1 className="css-1b21cc6">Create an account</h1>
@@ -111,6 +102,7 @@ const Register = () => {
                     <button disabled="" className="css-1j1xijh">
                       Let's go!
                     </button>
+                    <button className="css-1j1xijz">Log in</button>
                   </div>
                   <div className="css-1fezm8m">
                     <p className="css-19xlmcl">
