@@ -1,7 +1,14 @@
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../services/authContext";
 
 function Nav() {
+  const { auth, setAuth } = useAuth();
+  const handleLogout = () => {
+    setAuth({ isLoggedIn: false, username: null });
+    // Additional logout logic
+  };
+
   return (
     <header role="banner" className="css-m8cd7k">
       <div className="css-1gv6ckf">
@@ -154,23 +161,44 @@ function Nav() {
                   Graduate Discounts
                 </a>
               </li>
-              <li className="css-zffja8">
-                <a href="/login" data-testid="nav-login" className="css-u2nkub">
-                  Login
-                </a>
-              </li>
-              <li>
-                <div className="css-bves18">
-                  <Link
-                    className="css-ms1tcm"
-                    to="/register"
-                    type="button"
-                    target="_self"
-                  >
-                    <span className="css-xfi4js">Register</span>
-                  </Link>
-                </div>
-              </li>
+              {/* authentications */}
+              {auth.isLoggedIn ? (
+                <>
+                  <li className="css-zffja8">
+                    <span>Welcome, {auth.username}</span>
+                  </li>
+                  <li>
+                    <button onClick={handleLogout} className="css-u2nkub">
+                      Logout
+                    </button>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className="css-zffja8">
+                    <a
+                      href="/login"
+                      data-testid="nav-login"
+                      className="css-u2nkub"
+                    >
+                      Login
+                    </a>
+                  </li>
+                  <li>
+                    <div className="css-bves18">
+                      <Link
+                        className="css-ms1tcm"
+                        to="/register"
+                        type="button"
+                        target="_self"
+                      >
+                        <span className="css-xfi4js">Register</span>
+                      </Link>
+                    </div>
+                  </li>
+                </>
+              )}
+
               <li className="css-zffja8"></li>
             </ul>
           </nav>

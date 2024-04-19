@@ -5,7 +5,7 @@ import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
 
 import { useState } from "react";
-import axios from "axios";
+import axios from "../../services/axiosConfig.mjs";
 
 const Register = () => {
   const [username, setUsername] = useState("");

@@ -5,15 +5,24 @@ import { Link } from "react-router-dom";
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import axios from "../../services/axiosConfig.mjs";
+
+// authentications
+import { useAuth } from "../../services/authContext";
 
 const Login = () => {
+  const { auth, setAuth } = useAuth();
+
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
   });
   const [error, setError] = useState("");
+
+  const loginAuth = (username) => {
+    setAuth({ isLoggedIn: true, username: username });
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,6 +46,8 @@ const Login = () => {
       );
       // Assuming the server response contains a status that indicates success:
       if (response.status === 200) {
+        loginAuth(credentials.username);
+
         alert("User logged in successfully"); // Show success message
         navigate("/"); // Redirect to home page
         // console.log(err);
