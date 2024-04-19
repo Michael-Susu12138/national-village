@@ -37,12 +37,6 @@ const Register = () => {
               </button>
             </div>
             <div className="css-ouos42">
-              <div>
-                <h2 className="css-1b21cc6">Hello Again!</h2>
-              </div>
-              <div className="css-11biiks">
-                Log in to your National Village account
-              </div>
               <div className="css-1d0nbku">
                 <div className="css-1fgdcyd">
                   <h1 className="css-1b21cc7">Create an account</h1>
@@ -101,7 +95,6 @@ const Register = () => {
                     <button disabled="" className="css-1j1xijh">
                       Let's go!
                     </button>
-                    <button className="css-1j1xijz">Log in</button>
                   </div>
                   <div className="css-1fezm8m">
                     <p className="css-19xlmcl">

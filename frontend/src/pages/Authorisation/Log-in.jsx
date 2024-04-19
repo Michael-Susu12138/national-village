@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import "./auth.css";
-import "./login.css";
+// import "./auth.css";
+
 import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
 
@@ -38,18 +38,10 @@ const Login = () => {
               <div className="css-1kawphh">
                 <h2 className="css-1b21cc6">Hello Again!</h2>
               </div>
-              <div>
-                <p className="css-11biiks">
-                  Log in to your National Village account
-                </p>
+              <div className="css-11biiks">
+                <p>Log in to your National Village account</p>
               </div>
               <div className="css-1d0nbku">
-                <div className="css-1fgdcyd">
-                  <h1 className="css-1b21cc7">Create an account</h1>
-                  <p className="11biiks">
-                    Register for discounts on all your fave brands.
-                  </p>
-                </div>
                 <form aria-label="form">
                   <div className="css-b8qz6">
                     <label
@@ -98,18 +90,11 @@ const Login = () => {
                     </div>
                   </div>
                   <div className="css-2ji8uu">
-                    <button disabled="" className="css-1j1xijh">
-                      Let's go!
-                    </button>
                     <button className="css-1j1xijz">Log in</button>
                   </div>
                   <div className="css-1fezm8m">
                     <p className="css-19xlmcl">
-                      <span>
-                        By continuing to create an account, you agree to
-                        National Village's Terms & Conditions and Privacy
-                        Policy.
-                      </span>
+                      <span>Welcome to National Villiage Family.</span>
                     </p>
                   </div>
                 </form>
