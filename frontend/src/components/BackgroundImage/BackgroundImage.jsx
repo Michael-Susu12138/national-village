@@ -1,15 +1,15 @@
 import React from "react";
-import "./BackgroundImage.css"; // Import your CSS file for styling
+import "./BackgroundImage.css";
 
 const BackgroundImage = () => {
   return (
-    <div className="landing-page">
+    <div className="background-image">
       <div className="overlay">
         <h1>Welcome to the National Village.</h1>
         <p>
-          Because it takes a <span>village.</span>
+          Because it takes a <span className="village">village.</span>
         </p>
-        <button>Learn More</button>
+        <button>Get started.</button>
       </div>
     </div>
   );
