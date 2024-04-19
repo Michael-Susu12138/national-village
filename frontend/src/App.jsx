@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 
-import Register from "./pages/Register/Register";
-import Login from "./pages/Login/Login";
+import Register from "./pages/Authorisation/Sign-up";
+import Login from "./pages/Authorisation/Log-in";
 import Tandon from "./pages/Tandon/Tandon";
+import Detail from "./pages/Detail/Detail";
 
 import CreateRestaurantForm from "./test/RestaurantTest/CreateRestaurantForm";
 import SearchRestaurant from "./test/RestaurantTest/SearchRestaurant";
@@ -23,6 +24,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/tandon" element={<Tandon />} />
+        <Route path="/detail" element={<Detail />} />
         {/* <Route path="/add" element={<AddNews />} />
         <Route path="/contact" element={<Contact />} />
 

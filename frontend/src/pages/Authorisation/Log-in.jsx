@@ -1,9 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import "./Register.css";
+import "./auth.css";
+import "./login.css";
 import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
 
-const Register = () => {
+const Login = () => {
   return (
     <>
       <div className="css-1y5im6x">
@@ -28,12 +29,10 @@ const Register = () => {
         <div className="css-dc7ee6">
           <div className="css-f076qf">
             <div role="tablist" className="css-zjik7">
-              <button className="css-3dxqqo" data-element="Register">
-                Register
+              <button className="css-1qhaazl">
+                <Link to={"/register"}>Register</Link>
               </button>
-              <button className="css-1qhaazl" data-element="Login">
-                <Link to="/login">Log in</Link>
-              </button>
+              <button className="css-3dxqqo">Log in</button>
             </div>
             <div className="css-ouos42">
               <div className="css-1kawphh">
@@ -46,7 +45,7 @@ const Register = () => {
               </div>
               <div className="css-1d0nbku">
                 <div className="css-1fgdcyd">
-                  <h1 className="css-1b21cc6">Create an account</h1>
+                  <h1 className="css-1b21cc7">Create an account</h1>
                   <p className="11biiks">
                     Register for discounts on all your fave brands.
                   </p>
@@ -134,4 +133,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;
