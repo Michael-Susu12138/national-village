@@ -1,27 +1,54 @@
-import "./Tandon.css";
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../../components/Nav/Nav";
 import Alert from "../../components/Alert/Alert";
 import Card from "../../components/Card/Card";
+import Footer from "../../components/Footer/Footer";
+import "./Tandon.css";
 
 const Tandon = () => {
+  const [restaurants, setRestaurants] = useState([]);
+
+  useEffect(() => {
+    const fetchRestaurants = async () => {
+      try {
+        const response = await fetch("http://localhost:8000/api/restaurant");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setRestaurants(data);
+      } catch (error) {
+        console.error("Failed to fetch restaurants:", error);
+        // Handle errors here, e.g., by setting an error message in state
+      }
+    };
+
+    fetchRestaurants();
+  }, []); // Empty dependency array means this effect runs only once after the initial render
+
   return (
     <>
       <Alert></Alert>
       <Nav></Nav>
       <div>
-        <h1> Discounts Near Tandon </h1>
-        <Card
-          name="Test"
-          discount={0.1}
-          summary="this is a summary"
-          rating={3.5}
-          location="New York University"
-          tags={["technology", "someTag"]}
-          imgURL="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg"
-        ></Card>
+        <h1>Discounts Near Tandon</h1>
+        <div className="cards-container">
+          {restaurants.map((restaurant) => (
+            <div className="card-item" key={restaurant.id}>
+              <Card
+                name={restaurant.name}
+                discount={restaurant.discount}
+                summary={restaurant.summary}
+                rating={restaurant.rating}
+                location={restaurant.location}
+                tags={restaurant.tags}
+                imgURL={restaurant.imageUrl}
+              />
+            </div>
+          ))}
+        </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

@@ -1,3 +1,5 @@
+import "./AddRestaurant.css";
+
 import React, { useState } from "react";
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
@@ -125,9 +127,11 @@ const AddRestaurant = () => {
   return (
     <>
       <Nav></Nav>
-      <div>
+      <div className="form-container">
+        <h2>Add New Restaurant</h2>
         <form onSubmit={handleSubmit}>
           <input
+            className="form-input"
             type="text"
             name="name"
             value={restaurant.name}
@@ -136,6 +140,7 @@ const AddRestaurant = () => {
             required
           />
           <input
+            className="form-input"
             type="text"
             name="summary"
             value={restaurant.summary}
@@ -143,13 +148,7 @@ const AddRestaurant = () => {
             placeholder="Summary"
           />
           <input
-            type="text"
-            name="discount"
-            value={restaurant.discount}
-            onChange={handleChange}
-            placeholder="Discount"
-          />
-          <input
+            className="form-input"
             type="number"
             name="rating"
             value={restaurant.rating}
@@ -157,6 +156,7 @@ const AddRestaurant = () => {
             placeholder="Rating"
           />
           <input
+            className="form-input"
             type="text"
             name="location"
             value={restaurant.location}
@@ -165,6 +165,7 @@ const AddRestaurant = () => {
             required
           />
           <input
+            className="form-input"
             type="text"
             name="category"
             value={restaurant.category}
@@ -173,6 +174,7 @@ const AddRestaurant = () => {
             required
           />
           <input
+            className="form-input"
             type="text"
             name="tags"
             value={restaurant.tags.join(",")}
@@ -180,14 +182,21 @@ const AddRestaurant = () => {
             placeholder="Tags (comma separated)"
           />
           <input
+            className="form-input"
             type="text"
             name="imageUrl"
             value={restaurant.imageUrl}
             onChange={handleChange}
             placeholder="Image URL"
           />
-          <button type="submit">Create Restaurant</button>
-          <button type="button" onClick={handleDeleteAllRestaurants}>
+          <button className="form-button" type="submit">
+            Create Restaurant
+          </button>
+          <button
+            className="form-button delete"
+            type="button"
+            onClick={handleDeleteAllRestaurants}
+          >
             Delete All Restaurants
           </button>
         </form>
