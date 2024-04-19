@@ -4,6 +4,27 @@ import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axios
+      .post(`${import.meta.env.VITE_API}api/user/add`, {
+        username,
+        password,
+        email,
+      })
+      .then(() => {
+        alert("User added successfully");
+        // Reset form or redirect as needed
+      })
+      .catch((error) =>
+        console.error("There was an error creating the user:", error)
+      );
+  };
+
   return (
     <>
       <div className="css-1y5im6x">
@@ -51,7 +72,7 @@ const Register = () => {
                     Register for discounts on all your fave brands.
                   </p>
                 </div>
-                <form aria-label="form">
+                <form aria-label="form" onSubmit={handleSubmit}>
                   <div className="css-b8qz6">
                     <label
                       id="label-email"
@@ -68,6 +89,8 @@ const Register = () => {
                       aria-labelledby="label-email"
                       placeholder=""
                       className="css-17ygfqu"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                     <div className="css-koxizw">
                       <span>
@@ -91,6 +114,8 @@ const Register = () => {
                       aria-labelledby="label-password"
                       placeholder=""
                       className="css-17ygfqu"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
                     />
                     <div className="css-koxizw">
                       <span>
@@ -99,9 +124,11 @@ const Register = () => {
                     </div>
                   </div>
                   <div className="css-2ji8uu">
-                    <button disabled="" className="css-1j1xijh">
+                    <button type="submit" className="css-1j1xijz">
                       Let's go!
                     </button>
+
+                    {/* <input type="submit" value="Submit"></input> */}
                     <button className="css-1j1xijz">Log in</button>
                   </div>
                   <div className="css-1fezm8m">
