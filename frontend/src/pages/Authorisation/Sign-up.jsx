@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./auth.css";
-import "./signup.css";
 import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
 
