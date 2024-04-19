@@ -167,10 +167,12 @@ function Nav() {
                   <li className="css-zffja8">
                     <span>Welcome, {auth.username}</span>
                   </li>
-                  <li>
-                    <button onClick={handleLogout} className="css-u2nkub">
-                      Logout
-                    </button>
+                  <li className="css-bves18">
+                    <a onClick={handleLogout}>
+                      <div className="css-ms1tcm">
+                        <span className="css-xfi4js">Logout</span>
+                      </div>
+                    </a>
                   </li>
                 </>
               ) : (

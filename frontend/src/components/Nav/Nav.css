@@ -19,7 +19,7 @@ nav ul {
   list-style-image: none;
 }
 
-button {
+/* button {
   font-size: 15px;
   line-height: 24px;
   border-radius: 4px;
@@ -30,7 +30,7 @@ button {
     Sans Serif;
   cursor: pointer;
   vertical-align: baseline;
-}
+} */
 
 ul {
   margin-block-start: 1em;
