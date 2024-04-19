@@ -12,10 +12,15 @@ const TextandImage = () => {
             <img src="src/assets/signup.jpg" alt="Step 1" />
           </div>
           <div className="step-content">
-            <h3 className="step-title">Step 1: Signing Up!</h3>
+            <h3 className="step-title">
+              Step 1: <span class="green-text">Signing Up!</span>
+            </h3>
             <p className="step-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              National Village relies on community. That's why your step should
+              be making an account! Making an account allows you to add
+              restaurants, modify details of existing ones, or vote to delete
+              restaurants that no longer exist or a student discount. Three
+              votes = deletion!
             </p>
           </div>
         </div>
@@ -23,13 +28,19 @@ const TextandImage = () => {
         {/* Step 2 (Reversed) */}
         <div className="step step-reverse">
           <div className="step-image">
-            <img src="src/assets/Placeholder.jpg" alt="Step 2" />
+            <img src="src/assets/searchanimation.gif" alt="Step 2" />
           </div>
           <div className="step-content">
-            <h3 className="step-title">Step 2: Title</h3>
+            <h3 className="step-title">
+              Step 2:{" "}
+              <span className="green-text">Search for restaurants!</span>
+            </h3>
             <p className="step-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Feel free to use the search bar, or click your corresponding NYU
+              campus above (we'd like to add more schools, but this is ground
+              zero!). Search for restaurants by name, category (Anyone down to
+              go to a pizzeria?), or by proximity to your location. The entirety
+              of our crowdsourced database is at your fingertips!
             </p>
           </div>
         </div>
@@ -40,7 +51,9 @@ const TextandImage = () => {
             <img src="src/assets/Placeholder.jpg" alt="Step 3" />
           </div>
           <div className="step-content">
-            <h3 className="step-title">Step 3: Title</h3>
+            <h3 className="step-title">
+              Step 3: <span className="green-text">Title</span>
+            </h3>
             <p className="step-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -54,7 +67,9 @@ const TextandImage = () => {
             <img src="src/assets/Placeholder.jpg" alt="Step 4" />
           </div>
           <div className="step-content">
-            <h3 className="step-title">Step 4: Title</h3>
+            <h3 className="step-title">
+              Step 4: <span className="green-text">Title</span>
+            </h3>
             <p className="step-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
