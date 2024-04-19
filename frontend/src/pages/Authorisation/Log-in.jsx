@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-// import "./auth.css";
-
+import "./auth.css";
 import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
 
@@ -38,9 +37,9 @@ const Login = () => {
               <div className="css-1kawphh">
                 <h2 className="css-1b21cc6">Hello Again!</h2>
               </div>
-              <div className="css-11biiks">
-                <p>Log in to your National Village account</p>
-              </div>
+              <p className="css-11biiks">
+                Log in to your National Village account
+              </p>
               <div className="css-1d0nbku">
                 <form aria-label="form">
                   <div className="css-b8qz6">
