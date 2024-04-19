@@ -4,6 +4,7 @@ import Nav from "../../components/Nav/Nav";
 import BackgroundImage from "../../components/BackgroundImage/BackgroundImage";
 
 import Footer from "../../components/Footer/Footer";
+import TextandImage from "../../components/TextandImage/TextandImage";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Alert />
       <Nav />
       <BackgroundImage />
+      <TextandImage />
       <Footer />
     </>
   );
