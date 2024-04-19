@@ -3,7 +3,43 @@ import "./auth.css";
 import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
 
+import { useState } from "react";
+import axios from "axios";
+
 const Login = () => {
+  const [credentials, setCredentials] = useState({
+    username: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setCredentials((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError(""); // Reset error message
+
+    try {
+      const response = await axios.post(
+        `${import.meta.env.VITE_API}api/user/login`,
+        credentials,
+        {
+          withCredentials: true, // This ensures credentials are included with the request
+        }
+      );
+      console.log(response.data); // Process login success (e.g., redirect, store token)
+      // Redirect to another page or update state accordingly
+    } catch (err) {
+      setError("Failed to login. Please check your credentials.");
+    }
+  };
+
   return (
     <>
       <div className="css-1y5im6x">
@@ -41,23 +77,25 @@ const Login = () => {
                 Log in to your National Village account
               </p>
               <div className="css-1d0nbku">
-                <form aria-label="form">
+                <form aria-label="form" onSubmit={handleSubmit}>
                   <div className="css-b8qz6">
                     <label
                       id="label-email"
                       htmlFor="email"
                       className="css-b8qz6a"
                     >
-                      <span className="css-7it1vf">Email Address</span>
+                      <span className="css-7it1vf">Username</span>
                     </label>
                     <input
-                      id="email"
+                      id="username"
                       autoComplete="username"
-                      name="email"
-                      type="email"
-                      aria-labelledby="label-email"
+                      name="username"
+                      type="username"
+                      aria-labelledby="label-username"
                       placeholder=""
                       className="css-17ygfqu"
+                      value={credentials.username}
+                      onChange={handleChange}
                     />
                     <div className="css-koxizw">
                       <span>
@@ -81,6 +119,8 @@ const Login = () => {
                       aria-labelledby="label-password"
                       placeholder=""
                       className="css-17ygfqu"
+                      value={credentials.password}
+                      onChange={handleChange}
                     />
                     <div className="css-koxizw">
                       <span>
@@ -89,7 +129,9 @@ const Login = () => {
                     </div>
                   </div>
                   <div className="css-2ji8uu">
-                    <button className="css-1j1xijz">Log in</button>
+                    <button type="submit" className="css-1j1xijz">
+                      Log in
+                    </button>
                   </div>
                   <div className="css-1fezm8m">
                     <p className="css-19xlmcl">
