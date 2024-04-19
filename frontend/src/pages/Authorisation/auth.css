@@ -32,11 +32,6 @@ body {
     Sans Serif;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 2.75rem;
-}
-
 .css-111aaa {
   background-color: rgb(224, 211, 249);
   overflow: hidden;
@@ -247,6 +242,7 @@ p {
   line-height: 1.5em;
   color: rgb(7, 31, 69);
   font-size: 16px;
+  margin-bottom: 2.75rem;
 }
 
 .css-1d0nbku {
