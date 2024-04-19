@@ -1,7 +1,9 @@
 import "./Card.css";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../services/authContext";
 
 const Card = (props) => {
+  const { auth } = useAuth();
   // name, discount, summary, rating, location, tags, imgURL;
   const navigate = useNavigate();
   const navigateToDestination = (event) => {
@@ -9,6 +11,9 @@ const Card = (props) => {
     navigate("/detail", { state: props });
   };
 
+  const alertLogin = () => {
+    alert("You need to login to enjoy our GPS serivce");
+  };
   return (
     <div className="container">
       <div className="card">
@@ -26,7 +31,10 @@ const Card = (props) => {
           <h4>{props.name}</h4>
           <p>{props.summary}</p>
           <div className="user">
-            <a href="#" onClick={navigateToDestination}>
+            <a
+              href="#"
+              onClick={auth.isLoggedIn ? navigateToDestination : alertLogin}
+            >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <path
                   fill="#f9064f"

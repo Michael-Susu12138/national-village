@@ -8,6 +8,7 @@ import Register from "./pages/Authorisation/Sign-up";
 import Login from "./pages/Authorisation/Log-in";
 import Tandon from "./pages/Tandon/Tandon";
 import Detail from "./pages/Detail/Detail";
+import AddRestaurant from "./pages/AddRestaurant/AddRestaurant";
 
 import CreateRestaurantForm from "./test/RestaurantTest/CreateRestaurantForm";
 import SearchRestaurant from "./test/RestaurantTest/SearchRestaurant";
@@ -25,12 +26,13 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/tandon" element={<Tandon />} />
         <Route path="/detail" element={<Detail />} />
+        <Route path="/restaurant/add" element={<AddRestaurant />} />
         {/* <Route path="/add" element={<AddNews />} />
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/login" element={<Login />} /> */}
 
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/register" element={<Register />} />
         <Route path="/test-restaurantForm" element={<CreateRestaurantForm />} />
         <Route path="/test-restaurantSearch" element={<SearchRestaurant />} />
