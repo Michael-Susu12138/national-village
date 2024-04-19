@@ -17,6 +17,11 @@ const containerStyle = {
   height: "400px",
 };
 
+const defaultCenter = {
+  lat: -3.745,
+  lng: -38.523,
+};
+
 const libraries = ["places"];
 
 const Detail = () => {
@@ -35,6 +40,8 @@ const Detail = () => {
     libraries,
   });
 
+  //   setDestinationAddress(state.location);
+
   useEffect(() => {
     const watchId = navigator.geolocation.watchPosition(
       ({ coords }) => {
@@ -48,6 +55,10 @@ const Detail = () => {
     );
 
     return () => navigator.geolocation.clearWatch(watchId);
+  }, []);
+
+  useEffect(() => {
+    setDestinationAddress(state.location);
   }, []);
 
   useEffect(() => {
@@ -96,14 +107,14 @@ const Detail = () => {
     <>
       <Alert></Alert>
       <Nav></Nav>
-      {/* <div>
+      <div>
         <form onSubmit={handleSubmit}>
-          <input
+          {/* <input
             type="text"
             placeholder="Enter destination"
             value={destinationAddress}
             onChange={(e) => setDestinationAddress(e.target.value)}
-          />
+          /> */}
           <select
             value={travelMode}
             onChange={(e) => setTravelMode(e.target.value)}
@@ -139,7 +150,7 @@ const Detail = () => {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

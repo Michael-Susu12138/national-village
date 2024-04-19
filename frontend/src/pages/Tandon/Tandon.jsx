@@ -17,7 +17,7 @@ const Tandon = () => {
           discount={0.1}
           summary="this is a summary"
           rating={3.5}
-          location="343 Gold Street"
+          location="New York University"
           tags={["technology", "someTag"]}
           imgURL="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg"
         ></Card>
