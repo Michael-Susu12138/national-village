@@ -4,9 +4,11 @@ import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
@@ -33,10 +35,18 @@ const Login = () => {
           withCredentials: true, // This ensures credentials are included with the request
         }
       );
-      console.log(response.data); // Process login success (e.g., redirect, store token)
-      // Redirect to another page or update state accordingly
+      // Assuming the server response contains a status that indicates success:
+      if (response.status === 200) {
+        alert("User logged in successfully"); // Show success message
+        navigate("/"); // Redirect to home page
+        // console.log(err);
+        return;
+      } else {
+        alert("Failed to login. Please check your credentials."); // Show error message
+      }
     } catch (err) {
-      setError("Failed to login. Please check your credentials.");
+      alert("Failed to login. Please check your credentials."); // Show error message
+      setError("Failed to login. Please check your credentials."); // Set error state
     }
   };
 
