@@ -146,20 +146,27 @@ function Nav() {
           <nav className="css-1rkaqtc">
             <ul className="css-70qvj9">
               <li className="css-zffja8">
-                <a
-                  href="/graduate-discount/us"
-                  data-testid="nav-graduate"
-                  className="css-u2nkub"
-                >
-                  <span
-                    role="img"
-                    aria-label="graduate"
-                    className="css-15ro776"
-                  >
-                    🎓
-                  </span>
-                  Graduate Discounts
-                </a>
+                {/* authentications */}
+                {auth.isLoggedIn ? (
+                  <>
+                    <a
+                      href="/restaurant/add"
+                      data-testid="nav-graduate"
+                      className="css-u2nkub"
+                    >
+                      <span
+                        role="img"
+                        aria-label="graduate"
+                        className="css-15ro776"
+                      >
+                        🍽️
+                      </span>
+                      Create New Restaurant
+                    </a>
+                  </>
+                ) : (
+                  <></>
+                )}
               </li>
               {/* authentications */}
               {auth.isLoggedIn ? (

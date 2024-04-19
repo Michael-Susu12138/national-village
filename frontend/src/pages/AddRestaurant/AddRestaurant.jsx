@@ -1,10 +1,12 @@
 import "./AddRestaurant.css";
 
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
 
 const AddRestaurant = () => {
+  const navigate = useNavigate();
   const [restaurant, setRestaurant] = useState({
     name: "",
     summary: "",
@@ -93,6 +95,7 @@ const AddRestaurant = () => {
       } else if (response.status === 201) {
         console.log("Restaurant created:", data);
         alert("Restaurant created successfully.");
+        navigate("/"); // Redirect to home page
       } else {
         throw new Error("Failed to create restaurant");
       }
