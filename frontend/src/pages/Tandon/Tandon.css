@@ -1,0 +1,15 @@
+div h1 {
+  margin: 30px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* This will space out the cards evenly */
+  margin: 20px; /* Adds some margin around the container */
+}
+
+.card-item {
+  flex: 1 1 30%; /* Each card will take up about 30% of the container width */
+  margin: 10px; /* Adds some space between the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+}

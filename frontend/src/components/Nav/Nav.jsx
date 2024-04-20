@@ -1,7 +1,14 @@
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../services/authContext";
 
 function Nav() {
+  const { auth, setAuth } = useAuth();
+  const handleLogout = () => {
+    setAuth({ isLoggedIn: false, username: null });
+    // Additional logout logic
+  };
+
   return (
     <header role="banner" className="css-m8cd7k">
       <div className="css-1gv6ckf">
@@ -33,19 +40,8 @@ function Nav() {
           <nav className="css-i3rj5z">
             <ul className="css-leg12c2">
               <li>
-                <a href="/us" data-testid="nav-log" className="css-16w85wl">
-                  <img
-                    alt="Student Beans"
-                    loading="lazy"
-                    width="152"
-                    height="24"
-                    decoding="async"
-                    data-nimg="1"
-                    className="css-0"
-                    src=""
-                  />
-                </a>
-                <a href="/us" data-testid="nav-log" className="css-zffja8">
+                <a href="/" data-testid="nav-log" className="css-16w85wl"></a>
+                <a href="/" data-testid="nav-log" className="css-zffja8">
                   <img
                     alt="Student Beans"
                     loading="lazy"
@@ -150,51 +146,68 @@ function Nav() {
           <nav className="css-1rkaqtc">
             <ul className="css-70qvj9">
               <li className="css-zffja8">
-                <a
-                  href="/graduate-discount/us"
-                  data-testid="nav-graduate"
-                  className="css-u2nkub"
-                >
-                  <span
-                    role="img"
-                    aria-label="graduate"
-                    className="css-15ro776"
-                  >
-                    🎓
-                  </span>
-                  Graduate Discounts
-                </a>
+                {/* authentications */}
+                {auth.isLoggedIn ? (
+                  <>
+                    <a
+                      href="/restaurant/add"
+                      data-testid="nav-graduate"
+                      className="css-u2nkub"
+                    >
+                      <span
+                        role="img"
+                        aria-label="graduate"
+                        className="css-15ro776"
+                      >
+                        🍽️
+                      </span>
+                      Create New Restaurant
+                    </a>
+                  </>
+                ) : (
+                  <></>
+                )}
               </li>
-              <li className="css-zffja8">
-                <a
-                  href="https://www.studentbeans.com/blog/us/"
-                  data-testid="nav-blog"
-                  className="css-u2nkub"
-                >
-                  Blog
-                </a>
-              </li>
-              <li className="css-zffja8">
-                <a
-                  href="https://accounts.studentbeans.com/oauth/authorize?country=us&amp;response_type=token&amp;client_id=e55920fd-5410-4534-b926-b1214c85f64a&amp;redirect_uri=https://www.studentbeans.com/users/auth/studentbeans/callback&amp;user_return_to=https%3A%2F%2Fwww.studentbeans.com%2Fus&amp;auth_path=log-in&amp;consumer_group=student"
-                  data-testid="nav-login"
-                  className="css-u2nkub"
-                >
-                  Login
-                </a>
-              </li>
-              <li>
-                <div className="css-bves18">
-                  <Link
-                    className="css-ms1tcm"
-                    to="/register"
-                    type="button"
-                    target="_self"
-                  >
-                    <span className="css-xfi4js">Register</span>
-                  </Link>
-                </div>
-              </li>
+              {/* authentications */}
+              {auth.isLoggedIn ? (
+                <>
+                  <li className="css-zffja8">
+                    <span>Welcome, {auth.username}</span>
+                  </li>
+                  <li className="css-bves18">
+                    <a onClick={handleLogout}>
+                      <div className="css-ms1tcm">
+                        <span className="css-xfi4js">Logout</span>
+                      </div>
+                    </a>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className="css-zffja8">
+                    <a
+                      href="/login"
+                      data-testid="nav-login"
+                      className="css-u2nkub"
+                    >
+                      Login
+                    </a>
+                  </li>
+                  <li>
+                    <div className="css-bves18">
+                      <Link
+                        className="css-ms1tcm"
+                        to="/register"
+                        type="button"
+                        target="_self"
+                      >
+                        <span className="css-xfi4js">Register</span>
+                      </Link>
+                    </div>
+                  </li>
+                </>
+              )}
+
               <li className="css-zffja8"></li>
             </ul>
           </nav>
@@ -228,16 +241,13 @@ function Nav() {
             <div className="css-cn4vi6">
               <a
                 className="css-b201hx"
-                href="https://accounts.studentbeans.com/oauth/authorize?country=us&amp;response_type=token&amp;client_id=e55920fd-5410-4534-b926-b1214c85f64a&amp;redirect_uri=https://www.studentbeans.com/users/auth/studentbeans/callback&amp;user_return_to=https%3A%2F%2Fwww.studentbeans.com%2Fus&amp;auth_path=sign-up&amp;consumer_group=student"
+                href="/register"
                 type="button"
                 target="_self"
               >
                 <span className="css-xfi4js">Register</span>
               </a>
-              <a
-                href="https://accounts.studentbeans.com/oauth/authorize?country=us&amp;response_type=token&amp;client_id=e55920fd-5410-4534-b926-b1214c85f64a&amp;redirect_uri=https://www.studentbeans.com/users/auth/studentbeans/callback&amp;user_return_to=https%3A%2F%2Fwww.studentbeans.com%2Fus&amp;auth_path=log-in&amp;consumer_group=student"
-                className="css-1eraa3y"
-              >
+              <a href="/login" className="css-1eraa3y">
                 Login
               </a>
             </div>
@@ -322,7 +332,7 @@ function Nav() {
               <ul className="css-g00pq8">
                 <li className="css-17b3rz5">
                   <a
-                    href="/us/trending-discounts?source=nav"
+                    href="/"
                     data-testid="nav-category-trending-now"
                     className="css-lo4idg"
                   >
@@ -331,7 +341,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/all?source=nav"
+                    href="/"
                     data-testid="nav-category-all"
                     className="css-lo4idg"
                   >
@@ -340,7 +350,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/food-drink?source=nav"
+                    href="/tandon"
                     data-testid="nav-category-food-drink"
                     className="css-lo4idg"
                   >
@@ -349,7 +359,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/fashion?source=nav"
+                    href="/other"
                     data-testid="nav-category-fashion"
                     className="css-lo4idg"
                   >
@@ -358,7 +368,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/tech-mobile?source=nav"
+                    href="/other"
                     data-testid="nav-category-tech-mobile"
                     className="css-lo4idg"
                   >
@@ -367,7 +377,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/health-beauty?source=nav"
+                    href="/other"
                     data-testid="nav-category-health-beauty"
                     className="css-lo4idg"
                   >
@@ -376,7 +386,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/entertainment?source=nav"
+                    href="/other"
                     data-testid="nav-category-entertainment"
                     className="css-lo4idg"
                   >
@@ -385,7 +395,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/home-utilities?source=nav"
+                    href="/other"
                     data-testid="nav-category-home-utilities"
                     className="css-lo4idg"
                   >
@@ -394,7 +404,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <a
-                    href="/student-discount/us/cats/travel?source=nav"
+                    href="/other"
                     data-testid="nav-category-travel"
                     className="css-lo4idg"
                   >

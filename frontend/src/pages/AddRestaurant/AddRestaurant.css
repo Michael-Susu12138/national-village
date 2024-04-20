@@ -1,0 +1,39 @@
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-input,
+.form-button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Makes sure the padding doesn't affect the width */
+}
+
+.form-button {
+  background-color: #5c67f2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.form-button:hover {
+  background-color: #4a54e1;
+}
+
+.form-button.delete {
+  background-color: #f44336;
+}
+
+.form-button.delete:hover {
+  background-color: #d32f2f;
+}

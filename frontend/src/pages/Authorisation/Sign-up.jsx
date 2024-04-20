@@ -1,7 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import "./Register.css";
+import "./auth.css";
 import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
+
+import { useState } from "react";
+import axios from "../../services/axiosConfig.mjs";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -57,17 +60,9 @@ const Register = () => {
               </button>
             </div>
             <div className="css-ouos42">
-              <div className="css-1kawphh">
-                <h2 className="css-1b21cc6">Hello Again!</h2>
-              </div>
-              <div>
-                <p className="css-11biiks">
-                  Log in to your National Village account
-                </p>
-              </div>
               <div className="css-1d0nbku">
                 <div className="css-1fgdcyd">
-                  <h1 className="css-1b21cc6">Create an account</h1>
+                  <h1 className="css-1b21cc7">Create an account</h1>
                   <p className="11biiks">
                     Register for discounts on all your fave brands.
                   </p>
@@ -91,6 +86,31 @@ const Register = () => {
                       className="css-17ygfqu"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <div className="css-koxizw">
+                      <span>
+                        <span></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="css-b8qz6">
+                    <label
+                      id="label-username"
+                      htmlFor="username"
+                      className="css-b8qz6a"
+                    >
+                      <span className="css-7it1vf">Username</span>
+                    </label>
+                    <input
+                      id="username"
+                      autoComplete="username"
+                      name="username"
+                      type="username"
+                      aria-labelledby="label-username"
+                      placeholder=""
+                      className="css-17ygfqu"
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)}
                     />
                     <div className="css-koxizw">
                       <span>
@@ -124,12 +144,9 @@ const Register = () => {
                     </div>
                   </div>
                   <div className="css-2ji8uu">
-                    <button type="submit" className="css-1j1xijz">
+                    <button disabled="" type="submit" className="css-1j1xijh">
                       Let's go!
                     </button>
-
-                    {/* <input type="submit" value="Submit"></input> */}
-                    <button className="css-1j1xijz">Log in</button>
                   </div>
                   <div className="css-1fezm8m">
                     <p className="css-19xlmcl">

@@ -1,0 +1,50 @@
+.background-image {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  background-image: url(../../assets/wood-food.jpg);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the text horizontally */
+  color: white;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-end; /* Align items to the right */
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  text-align: right; /* Align the h1 text to the right */
+}
+
+.overlay p {
+  font-size: 1.5rem;
+  text-align: right; /* Align the p text to the right */
+}
+
+.overlay button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #319531;
+  font-family: "Calibri", sans-serif;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background-color: #90ee90;
+}
+
+.village {
+  color: lightgreen;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}

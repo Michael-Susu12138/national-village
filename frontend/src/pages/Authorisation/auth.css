@@ -75,7 +75,6 @@ body {
   width: auto;
   overflow: visible;
   background: rgb(224, 228, 235);
-  display: inline-block;
   padding: 9px 12px 7px;
   font-size: 16px;
   border-radius: 5px;
@@ -112,7 +111,6 @@ body {
 
 .css-2sstpbq {
   position: relative;
-  display: inline-block;
   vertical-align: middle;
   width: 3.25em;
   height: 3.25em;
@@ -137,7 +135,6 @@ body {
   width: auto;
   overflow: visible;
   background: rgb(224, 228, 235);
-  display: inline-block;
   font-size: 16px;
   border-radius: 5px;
   color: rgb(7, 31, 69);
@@ -231,13 +228,21 @@ body {
   font-family: "Gibson SemiBold", Helvetica, Arial, "Sans Serif";
 }
 
+.css-1b21cc7 {
+  margin: 0px;
+  line-height: 1.25em;
+  color: rgb(7, 31, 69);
+  font-size: 24px;
+  font-family: "Gibson SemiBold", Helvetica, Arial, "Sans Serif";
+}
+
 .css-11biiks {
-  display: none;
   margin: 0px;
   font-family: Gibson, Helvetica, Arial, "Sans Serif";
   line-height: 1.5em;
   color: rgb(7, 31, 69);
   font-size: 16px;
+  margin-bottom: 2.75rem;
 }
 
 .css-1d0nbku {
@@ -245,7 +250,6 @@ body {
 }
 
 .css-1fgdcyd {
-  display: inline-block;
   margin-bottom: 44px;
 }
 
@@ -256,10 +260,6 @@ form {
 .css-b8qz6 {
   position: relative;
   padding: 24px 0px;
-}
-
-.css-1kawphh {
-  display: none;
 }
 
 .css-1klt2ma {
@@ -333,7 +333,6 @@ form {
 }
 
 .css-1j1xijh {
-  display: inline-block;
   border: none;
   overflow: visible;
   background: rgb(101, 35, 227);
@@ -353,7 +352,6 @@ form {
 }
 
 .css-1j1xijz {
-  display: none;
   border: none;
   overflow: visible;
   background: rgb(101, 35, 227);
@@ -373,7 +371,6 @@ form {
 }
 
 .css-1fezm8m {
-  display: inline-block;
   text-align: center;
   padding: 0px 30px;
   margin-top: 20px;

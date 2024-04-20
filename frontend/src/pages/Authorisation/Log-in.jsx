@@ -1,28 +1,64 @@
 /* eslint-disable react/no-unescaped-entities */
-import "./Register.css";
+import "./auth.css";
 import "../../components/Footer/Footer.css";
 import { Link } from "react-router-dom";
 
-const Register = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "../../services/axiosConfig.mjs";
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    axios
-      .post(`${import.meta.env.VITE_API}api/user/add`, {
-        username,
-        password,
-        email,
-      })
-      .then(() => {
-        alert("User added successfully");
-        // Reset form or redirect as needed
-      })
-      .catch((error) =>
-        console.error("There was an error creating the user:", error)
+// authentications
+import { useAuth } from "../../services/authContext";
+
+const Login = () => {
+  const { auth, setAuth } = useAuth();
+
+  const navigate = useNavigate();
+  const [credentials, setCredentials] = useState({
+    username: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
+
+  const loginAuth = (username) => {
+    setAuth({ isLoggedIn: true, username: username });
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setCredentials((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError(""); // Reset error message
+
+    try {
+      const response = await axios.post(
+        `${import.meta.env.VITE_API}api/user/login`,
+        credentials,
+        {
+          withCredentials: true, // This ensures credentials are included with the request
+        }
       );
+      // Assuming the server response contains a status that indicates success:
+      if (response.status === 200) {
+        loginAuth(credentials.username);
+
+        alert("User logged in successfully"); // Show success message
+        navigate("/"); // Redirect to home page
+        // console.log(err);
+        return;
+      } else {
+        alert("Failed to login. Please check your credentials."); // Show error message
+      }
+    } catch (err) {
+      alert("Failed to login. Please check your credentials."); // Show error message
+      setError("Failed to login. Please check your credentials."); // Set error state
+    }
   };
 
   return (
@@ -49,29 +85,19 @@ const Register = () => {
         <div className="css-dc7ee6">
           <div className="css-f076qf">
             <div role="tablist" className="css-zjik7">
-              <button className="css-3dxqqo" data-element="Register">
-                Register
+              <button className="css-1qhaazl">
+                <Link to={"/register"}>Register</Link>
               </button>
-              <button className="css-1qhaazl" data-element="Login">
-                <Link to="/login">Log in</Link>
-              </button>
+              <button className="css-3dxqqo">Log in</button>
             </div>
             <div className="css-ouos42">
               <div className="css-1kawphh">
                 <h2 className="css-1b21cc6">Hello Again!</h2>
               </div>
-              <div>
-                <p className="css-11biiks">
-                  Log in to your National Village account
-                </p>
-              </div>
+              <p className="css-11biiks">
+                Log in to your National Village account
+              </p>
               <div className="css-1d0nbku">
-                <div className="css-1fgdcyd">
-                  <h1 className="css-1b21cc6">Create an account</h1>
-                  <p className="11biiks">
-                    Register for discounts on all your fave brands.
-                  </p>
-                </div>
                 <form aria-label="form" onSubmit={handleSubmit}>
                   <div className="css-b8qz6">
                     <label
@@ -79,18 +105,18 @@ const Register = () => {
                       htmlFor="email"
                       className="css-b8qz6a"
                     >
-                      <span className="css-7it1vf">Email Address</span>
+                      <span className="css-7it1vf">Username</span>
                     </label>
                     <input
-                      id="email"
+                      id="username"
                       autoComplete="username"
-                      name="email"
-                      type="email"
-                      aria-labelledby="label-email"
+                      name="username"
+                      type="username"
+                      aria-labelledby="label-username"
                       placeholder=""
                       className="css-17ygfqu"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      value={credentials.username}
+                      onChange={handleChange}
                     />
                     <div className="css-koxizw">
                       <span>
@@ -114,8 +140,8 @@ const Register = () => {
                       aria-labelledby="label-password"
                       placeholder=""
                       className="css-17ygfqu"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
+                      value={credentials.password}
+                      onChange={handleChange}
                     />
                     <div className="css-koxizw">
                       <span>
@@ -125,19 +151,12 @@ const Register = () => {
                   </div>
                   <div className="css-2ji8uu">
                     <button type="submit" className="css-1j1xijz">
-                      Let's go!
+                      Log in
                     </button>
-
-                    {/* <input type="submit" value="Submit"></input> */}
-                    <button className="css-1j1xijz">Log in</button>
                   </div>
                   <div className="css-1fezm8m">
                     <p className="css-19xlmcl">
-                      <span>
-                        By continuing to create an account, you agree to
-                        National Village's Terms & Conditions and Privacy
-                        Policy.
-                      </span>
+                      <span>Welcome to National Villiage Family.</span>
                     </p>
                   </div>
                 </form>
@@ -161,4 +180,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;
