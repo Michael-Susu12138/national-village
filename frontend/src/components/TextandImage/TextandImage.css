@@ -4,9 +4,16 @@
 }
 
 .section-title {
-  font-family: "Garamond", serif; /* Set font to Garamond */
+  font-family: "Palatino", serif; /* Apply Palatino font-family */
   font-size: 2.5rem;
   margin-bottom: 30px;
+}
+
+.overlay hr {
+  border: none;
+  border-top: 100px solid black;
+  width: 80%;
+  margin: 10px auto; /* Adjust margin as needed */
 }
 
 .steps-container {
