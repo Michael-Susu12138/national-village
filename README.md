@@ -28,26 +28,26 @@
 
 ## Project Structure
 
-/national-village
-|-- /backend
-| |-- /controllers
-| |-- /models
-| |-- /passports
-| |-- /public
-| |-- /routes
-| |-- /test
-| |-- package.json
-| -- server.mjs
-|-- /frontend
-| |-- /public
-| |-- /src
-| | |-- /components
-| | |-- /services
-| | |-- /pages
-| | -- App.jsx
-| | -- main.jsx
-| |-- package.json
--- README.md
+national-village
+├── backend  
+│ ├── controllers  
+│ ├── models  
+│ ├── passports  
+│ ├── public  
+│ ├── routes  
+│ ├── test  
+│ ├── package.json  
+│ └── server.mjs  
+├── frontend
+│ ├── public  
+│ ├── src  
+│ ├── components
+│ ├── services  
+│ ├── pages
+│ ├── App.jsx  
+│ ├── main.jsx
+│ └── package.json  
+└── README.md
 
 ## Setup and Installation
 
@@ -90,5 +90,3 @@ Ensure you have Node.js and npm installed before setting up the project.
 - Amanda Cuevas - aac676@nyu.edu
 - Christ Chen - hc3539@nyu.edu
 - Michael Chen - yc4557@nyu.edu
-
-This README provides a clear description of your project, its structure, how to get started with it, and how to contribute, alongside essential contact information and acknowledgments. Adjust paths, URLs, and specific commands according to your actual project setup and repository details.
