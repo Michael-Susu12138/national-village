@@ -1,12 +1,41 @@
 import "./Nav.css";
-import { Link } from "react-router-dom";
+
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 import { useAuth } from "../../services/authContext";
 
 function Nav() {
   const { auth, setAuth } = useAuth();
+  const navigate = useNavigate();
   const handleLogout = () => {
     setAuth({ isLoggedIn: false, username: null });
     // Additional logout logic
+  };
+
+  // search bar
+  const [query, setQuery] = useState({});
+  const [results, setResults] = useState([]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setQuery((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const queryString = new URLSearchParams(query).toString();
+    try {
+      const response = await fetch(
+        import.meta.env.VITE_API + `api/restaurant/search?${queryString}`
+      );
+      if (!response.ok) throw new Error("Search failed");
+      const data = await response.json();
+      setResults(data);
+      navigate("/search", { state: { results: data } });
+    } catch (error) {
+      console.error("Error during search:", error);
+    }
   };
 
   return (
@@ -62,8 +91,8 @@ function Nav() {
           </nav>
           <div className="css-4zhpre">
             <span>
-              <button data-testid="nav-search-desktop" className="css-1bg6ws0">
-                <span className="css-g5llj7">
+              <form onSubmit={handleSubmit}>
+                <div class="input-icon-container">
                   <svg
                     width="16px"
                     height="16px"
@@ -71,7 +100,7 @@ function Nav() {
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"
                     aria-label="Search Icon"
-                    className="css-1xdhyk6"
+                    className="search-icon"
                   >
                     <g
                       strokeWidth="2"
@@ -86,11 +115,26 @@ function Nav() {
                       <path d="M18 18l-5.2-5.2"></path>
                     </g>
                   </svg>
-                  <p className="css-1a0fpzk">
-                    Search brands, items or categories
-                  </p>
-                </span>
-              </button>
+                  <input
+                    type="text"
+                    name="name"
+                    className="search-input"
+                    onChange={handleChange}
+                    placeholder="Search"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  data-testid="nav-search-desktop"
+                  className="css-1bg6ws0"
+                >
+                  {/* <span className="css-g5llj7">
+                    
+                    <p className="css-1a0fpzk">Search Names</p> */}
+                  {/* </span> */}
+                </button>
+              </form>
             </span>
           </div>
           <nav className="css-1rkaqtc">

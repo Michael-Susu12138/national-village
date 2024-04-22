@@ -11,6 +11,7 @@ import Detail from "./pages/Detail/Detail";
 import AddRestaurant from "./pages/AddRestaurant/AddRestaurant";
 import UCpage from "./pages/UC/ucpage";
 import Contact from "./pages/Contact/Contact";
+import Search from "./pages/Search/Search";
 
 import CreateRestaurantForm from "./test/RestaurantTest/CreateRestaurantForm";
 import SearchRestaurant from "./test/RestaurantTest/SearchRestaurant";
@@ -31,6 +32,7 @@ function App() {
         <Route path="/restaurant/add" element={<AddRestaurant />} />
         <Route path="/uc" element={<UCpage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/search" element={<Search />} />
         {/* <Route path="/add" element={<AddNews />} />
         <Route path="/contact" element={<Contact />} />
 
