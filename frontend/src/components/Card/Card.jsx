@@ -46,11 +46,7 @@ const Card = (props) => {
     <div className="container">
       <div className="card">
         <div className="card-header">
-
           <img src={props.imgURL} alt={props.name} />
-          <div className="rating-overlay">
-            {renderStars(props.rating)} {props.rating}/5
-          </div>
         </div>
         <div className="card-body">
           <div className="tag-list">
@@ -60,8 +56,7 @@ const Card = (props) => {
               </span>
             ))}
           </div>
-        </div>
-        <div className="card-body">
+
           <div className="steve">
             <h4>{props.name}</h4>
             <div className="rating-overlay">{renderStars(props.rating)}</div>
