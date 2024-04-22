@@ -212,8 +212,6 @@ svg:not(:root) {
     Arial,
     Sans Serif;
   padding: 0px 18px;
-  font-size: 15px;
-  line-height: 36px;
   white-space: nowrap;
 }
 
