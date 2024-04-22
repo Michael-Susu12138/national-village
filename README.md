@@ -28,6 +28,7 @@
 
 ## Project Structure
 
+```
 national-village
 ├── backend                 
 │   ├── controllers       
@@ -48,7 +49,7 @@ national-village
 │   ├── main.jsx 
 │   └── package.json            
 └── README.md
-
+```
 ## Setup and Installation
 
 Ensure you have Node.js and npm installed before setting up the project.
