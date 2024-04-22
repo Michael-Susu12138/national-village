@@ -4,9 +4,16 @@
 }
 
 .section-title {
-  font-family: "Garamond", serif; /* Set font to Garamond */
+  font-family: "Palatino", serif; /* Apply Palatino font-family */
   font-size: 2.5rem;
   margin-bottom: 30px;
+}
+
+.overlay hr {
+  border: none;
+  border-top: 100px solid black;
+  width: 80%;
+  margin: 10px auto; /* Adjust margin as needed */
 }
 
 .steps-container {
@@ -19,30 +26,34 @@
   margin-bottom: 80px;
   display: flex;
   align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .step-image {
   width: 200px;
-  margin-right: 50px;
+  margin-right: 70px;
 }
 
 .step-image img {
   width: 150%;
   height: auto;
   border-radius: 8px;
-  padding-left: 40px;
 }
 
 .step-content {
   flex-grow: 1;
   text-align: left;
   padding-left: 40px; /* Add padding to the left */
+  padding-right: 40px;
+  width: 50%;
 }
 
 .step-title {
   font-family: "Garamond", serif; /* Set font to Georgia */
   font-size: 2rem;
   margin-bottom: 16px;
+  font-weight: bold;
 }
 
 .step-text {
@@ -50,8 +61,16 @@
   font-size: 1rem;
   color: #666;
   margin-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .step-reverse {
   flex-direction: row-reverse;
+  margin-right: 40px;
+}
+
+.green-text {
+  color: green;
+  font-weight: medium;
 }

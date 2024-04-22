@@ -9,7 +9,6 @@ const BackgroundImage = () => {
         <p>
           Because it takes a <span className="village">village.</span>
         </p>
-        <button>Get started.</button>
       </div>
     </div>
   );
