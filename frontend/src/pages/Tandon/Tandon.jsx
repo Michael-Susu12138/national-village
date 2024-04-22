@@ -11,7 +11,9 @@ const Tandon = () => {
   useEffect(() => {
     const fetchRestaurants = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/restaurant");
+        const response = await fetch(
+          `${import.meta.env.VITE_API}api/restaurant`
+        );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
