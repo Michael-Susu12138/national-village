@@ -309,7 +309,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-fashion"
                     className="css-lo4idg"
                   >
@@ -318,7 +318,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-tech-mobile"
                     className="css-lo4idg"
                   >
@@ -327,7 +327,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-health-beauty"
                     className="css-lo4idg"
                   >
@@ -336,7 +336,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-entertainment"
                     className="css-lo4idg"
                   >
@@ -345,7 +345,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-home-utilities"
                     className="css-lo4idg"
                   >
@@ -354,7 +354,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-travel"
                     className="css-lo4idg"
                   >

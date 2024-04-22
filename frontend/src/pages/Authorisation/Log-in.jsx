@@ -70,7 +70,7 @@ const Login = () => {
               <div className="css-1bijsj2">
                 <a href="/">
                   <img
-                    src="../src/assets/NVLogo.png"
+                    src="assets/NVLogo.png"
                     alt="National Village"
                     className="css-10qpvih"
                   />
