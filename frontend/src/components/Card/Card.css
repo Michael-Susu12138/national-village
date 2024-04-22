@@ -130,6 +130,19 @@
   width: 17px;
 }
 
+.star {
+  width: 20px; /* Control the size of the stars */
+  height: auto;
+  fill: #ffd700; /* Default color for stars (gold) */
+}
+.rating-overlay {
+  position: absolute;
+  top: 10px; /* Adjust as necessary */
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
 .text .h3 {
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;

@@ -160,6 +160,15 @@ const AddRestaurant = () => {
           />
           <input
             className="form-input"
+            type="number"
+            name="discount"
+            value={restaurant.discount}
+            onChange={handleChange}
+            placeholder="Discount (% OFF)"
+          />
+
+          <input
+            className="form-input"
             type="text"
             name="location"
             value={restaurant.location}

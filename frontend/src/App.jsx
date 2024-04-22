@@ -10,6 +10,7 @@ import Tandon from "./pages/Tandon/Tandon";
 import Detail from "./pages/Detail/Detail";
 import AddRestaurant from "./pages/AddRestaurant/AddRestaurant";
 import UCpage from "./pages/UC/ucpage";
+import Contact from "./pages/Contact/Contact";
 
 import CreateRestaurantForm from "./test/RestaurantTest/CreateRestaurantForm";
 import SearchRestaurant from "./test/RestaurantTest/SearchRestaurant";
@@ -29,7 +30,7 @@ function App() {
         <Route path="/detail" element={<Detail />} />
         <Route path="/restaurant/add" element={<AddRestaurant />} />
         <Route path="/uc" element={<UCpage />} />
-
+        <Route path="/contact" element={<Contact />} />
         {/* <Route path="/add" element={<AddNews />} />
         <Route path="/contact" element={<Contact />} />
 
