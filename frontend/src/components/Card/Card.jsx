@@ -46,9 +46,7 @@ const Card = (props) => {
     <div className="container">
       <div className="card">
         <div className="card-header">
-          <img src={props.imgURL} alt={props.name} />
-        </div>
-        <div className="card-body">
+          <img src={props.imgURL} alt={props.name}></img>
           <div className="tag-list">
             {props.tags.map((tag, index) => (
               <span key={index} className="tag tag-teal">
@@ -56,12 +54,10 @@ const Card = (props) => {
               </span>
             ))}
           </div>
-
-          <div className="steve">
-            <h4>{props.name}</h4>
-            <div className="rating-overlay">{renderStars(props.rating)}</div>
-          </div>
-          <p>{props.summary}</p>
+        </div>
+        <div className="card-body">
+          <h4>{props.name}</h4>
+          <div className="rating-overlay">{renderStars(props.rating)}</div>
           <div className="discount">
             <span>{props.discount}% OFF</span>
           </div>
