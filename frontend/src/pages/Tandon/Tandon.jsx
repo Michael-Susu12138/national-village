@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "../../components/Nav/Nav";
-import Alert from "../../components/Alert/Alert";
 import Card from "../../components/Card/Card";
 import Footer from "../../components/Footer/Footer";
 import "./Tandon.css";
@@ -30,7 +29,6 @@ const Tandon = () => {
 
   return (
     <>
-      <Alert></Alert>
       <Nav></Nav>
       <div>
         <h1>Discounts Near Tandon</h1>

@@ -10,7 +10,7 @@ const TextandImage = () => {
         {/* Step 1 */}
         <div className="step">
           <div className="step-image">
-            <img src="src/assets/signup.jpg" alt="Step 1" />
+            <img src="/assets/signup.jpg" alt="Step 1" />
           </div>
           <div className="step-content">
             <h3 className="step-title">
@@ -29,7 +29,7 @@ const TextandImage = () => {
         {/* Step 2 (Reversed) */}
         <div className="step step-reverse">
           <div className="step-image">
-            <img src="src/assets/searchanimation.gif" alt="Step 2" />
+            <img src="/assets/searchanimation.gif" alt="Step 2" />
           </div>
           <div className="step-content">
             <h3 className="step-title">
@@ -49,7 +49,7 @@ const TextandImage = () => {
         {/* Step 3 */}
         <div className="step">
           <div className="step-image">
-            <img src="src/assets/addsub.gif" alt="Step 3" />
+            <img src="/assets/addsub.gif" alt="Step 3" />
           </div>
           <div className="step-content">
             <h3 className="step-title">
@@ -72,7 +72,7 @@ const TextandImage = () => {
         {/* Step 4 (Reversed) */}
         <div className="step step-reverse">
           <div className="step-image">
-            <img src="src/assets/piggybank.gif" alt="Step 4" />
+            <img src="/assets/piggybank.gif" alt="Step 4" />
           </div>
           <div className="step-content">
             <h3 className="step-title">

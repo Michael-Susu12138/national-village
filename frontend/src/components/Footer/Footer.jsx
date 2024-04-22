@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -93,29 +94,29 @@ const Footer = () => {
             <h2 className="css-jax8d3">Work With Us</h2>
             <ul className="list-none m-0 p-0">
               <li>
-                <a href="https://partner.studentbeans.com/">
+                <Link to="/uc">
                   <p className="css-hzehox">Advertise</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://partner.studentbeans.com/about-us/careers/">
+                <Link to="/uc">
                   <p className="css-hzehox">Careers</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://partner.studentbeans.com/brand-solutions/student-verification">
+                <Link to="/uc">
                   <p className="css-hzehox">Student Verification</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://partner.studentbeans.com/brand-solutions/student-marketing">
+                <Link to="/uc">
                   <p className="css-hzehox">Student Marketing</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://partner.studentbeans.com/brand-solutions/student-research">
+                <Link to="/uc">
                   <p className="css-hzehox">Student Research</p>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -123,54 +124,44 @@ const Footer = () => {
             <h2 className="css-jax8d3">Useful Stuff</h2>
             <ul className="list-none m-0 p-0">
               <li>
-                <a href="/us/about">
+                <Link to="/uc">
                   <p className="css-hzehox">About</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/us/how-it-works">
+                <Link to="/uc">
                   <p className="css-hzehox">How it Works</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://accounts.studentbeans.com/us/info/privacy">
+                <Link to="/uc">
                   <p className="css-hzehox">Privacy Policy</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://accounts.studentbeans.com/us/info/terms">
+                <Link to="/uc">
                   <p className="css-hzehox">Terms &amp; Conditions</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/id/us">
+                <Link to="/uc">
                   <p className="css-hzehox">Student Card</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://chrome.google.com/webstore/detail/student-beans/pdmhehfogekmpmdoemhabjpaiadagpgp">
-                  <p className="css-hzehox">Chrome Extension</p>
-                </a>
-              </li>
-              <li>
-                <a href="/student-discount/us/cats">
+                <Link to="/uc">
                   <p className="css-hzehox">All Categories</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/student-discount/us/brands">
+                <Link to="/uc">
                   <p className="css-hzehox">All Brands</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/graduate-discount/us">
+                <Link to="/uc">
                   <p className="css-hzehox">Graduate Discounts</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://beansid.com/us">
-                  <p className="css-hzehox">BeansiD Discounts</p>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -179,9 +170,9 @@ const Footer = () => {
               <h2 className="css-jax8d3">Need Help?</h2>
               <ul className="list-none m-0 p-0">
                 <li>
-                  <a href="https://help.studentbeans.com/hc/en-us">
+                  <Link to="/uc">
                     <p className="css-hzehox">Support FAQs</p>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

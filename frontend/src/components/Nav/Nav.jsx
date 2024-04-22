@@ -54,7 +54,7 @@ function Nav() {
                     decoding="async"
                     data-nimg="1"
                     className="css-0"
-                    src="../src/assets/NVLogo.png"
+                    src="/assets/NVLogo.png"
                   />
                 </Link>
               </li>
@@ -309,7 +309,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-fashion"
                     className="css-lo4idg"
                   >
@@ -318,7 +318,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-tech-mobile"
                     className="css-lo4idg"
                   >
@@ -327,7 +327,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-health-beauty"
                     className="css-lo4idg"
                   >
@@ -336,7 +336,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-entertainment"
                     className="css-lo4idg"
                   >
@@ -345,7 +345,7 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-home-utilities"
                     className="css-lo4idg"
                   >
@@ -354,102 +354,21 @@ function Nav() {
                 </li>
                 <li className="css-17b3rz5">
                   <Link
-                    to="/other"
+                    to="/uc"
                     data-testid="nav-category-travel"
                     className="css-lo4idg"
                   >
                     NYU Madrid
                   </Link>
                 </li>
-                <li className="css-1a45p86">
-                  <button
-                    data-testid="nav-category-more"
-                    className="css-84zv3j"
+                <li className="css-17b3rz5">
+                  <Link
+                    to="/contact"
+                    data-testid="nav-category-travel"
+                    className="css-lo4idg"
                   >
-                    <span>More</span>
-                    <span className="css-1iuj5ih">
-                      <svg
-                        width="12"
-                        height="10"
-                        viewBox="0 0 8 11"
-                        version="1.1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xlinkHref="http://www.w3.org/1999/xlink"
-                        role="img"
-                        aria-label="More categories dropdown icon"
-                        className="css-12row48"
-                      >
-                        <g
-                          stroke="none"
-                          strokeWidth="1"
-                          fill="none"
-                          fillRule="evenodd"
-                          opacity="1"
-                        >
-                          <g
-                            transform="translate(-71.000000, -5.000000)"
-                            fillRule="nonzero"
-                            fill="#A0A3A3"
-                          >
-                            <path
-                              d="M70.2928932,9.12435786 L74.2928932,13.3089732 C74.6834175,13.7175217 75.3165825,13.7175217 75.7071068,13.3089732 L79.7071068,9.12435786 C80.0976311,8.71580937 80.0976311,8.0534214 79.7071068,7.64487291 C79.3165825,7.23632442 78.6834175,7.23632442 78.2928932,7.64487291 L74.2928932,11.8294883 L75.7071068,11.8294883 L71.7071068,7.64487291 C71.3165825,7.23632442 70.6834175,7.23632442 70.2928932,7.64487291 C69.9023689,8.0534214 69.9023689,8.71580937 70.2928932,9.12435786 L70.2928932,9.12435786 Z"
-                              transform="translate(75.000000, 10.476923) rotate(-90.000000) translate(-75.000000, -10.476923) "
-                            ></path>
-                          </g>
-                        </g>
-                      </svg>
-                    </span>
-                  </button>
-                  <ul
-                    data-testid="nav-category-dropdown"
-                    className="css-bv6863"
-                  >
-                    <li className="css-17b3rz5">
-                      <a
-                        href="/student-discount/us/cats/books-mags-news?source=nav"
-                        data-testid="nav-category-books-mags-news"
-                        className="css-lo4idg"
-                      >
-                        Books, Mags &amp; News
-                      </a>
-                    </li>
-                    <li className="css-17b3rz5">
-                      <a
-                        href="/student-discount/us/cats/study-stationery?source=nav"
-                        data-testid="nav-category-study-stationery"
-                        className="css-lo4idg"
-                      >
-                        Study &amp; Stationery
-                      </a>
-                    </li>
-                    <li className="css-17b3rz5">
-                      <a
-                        href="/student-discount/us/cats/gifts-gadgets?source=nav"
-                        data-testid="nav-category-gifts-gadgets"
-                        className="css-lo4idg"
-                      >
-                        Gifts &amp; Gadgets
-                      </a>
-                    </li>
-                    <li className="css-17b3rz5">
-                      <a
-                        href="/student-discount/us/cats/sports-outdoors?source=nav"
-                        data-testid="nav-category-sports-outdoors"
-                        className="css-lo4idg"
-                      >
-                        Sports &amp; Outdoors
-                      </a>
-                    </li>
-                    <li className="css-17b3rz5">
-                      <a
-                        href="/student-discount/us/cats/finance?source=nav"
-                        data-testid="nav-category-finance"
-                        className="css-lo4idg"
-                      >
-                        Finance
-                      </a>
-                    </li>
-                  </ul>
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </nav>
