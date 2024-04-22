@@ -76,7 +76,7 @@ const TextandImage = () => {
           </div>
           <div className="step-content">
             <h3 className="step-title">
-              Step 4: <span className="green-text">SAVE!</span>
+              Step 4: <span className="green-text">SAVE MONEY!</span>
             </h3>
             <p className="step-text">
               All caps. That's how you know we're serious about it. National

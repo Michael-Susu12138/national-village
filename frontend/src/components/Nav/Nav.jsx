@@ -283,15 +283,6 @@ function Nav() {
                 <li className="css-17b3rz5">
                   <Link
                     to="/"
-                    data-testid="nav-category-trending-now"
-                    className="css-lo4idg"
-                  >
-                    Trending Now
-                  </Link>
-                </li>
-                <li className="css-17b3rz5">
-                  <Link
-                    to="/"
                     data-testid="nav-category-all"
                     className="css-lo4idg"
                   >
@@ -359,6 +350,15 @@ function Nav() {
                     className="css-lo4idg"
                   >
                     NYU Madrid
+                  </Link>
+                </li>
+                <li className="css-17b3rz5">
+                  <Link
+                    to="/uc"
+                    data-testid="nav-category-travel"
+                    className="css-lo4idg"
+                  >
+                    NYU Florence
                   </Link>
                 </li>
                 <li className="css-17b3rz5">
