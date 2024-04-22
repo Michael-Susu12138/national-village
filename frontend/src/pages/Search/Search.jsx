@@ -8,19 +8,25 @@ import Card from "../../components/Card/Card";
 
 const Search = () => {
   const { state } = useLocation();
-  console.log(state);
+
+  // Handling when state or state.results is null
+  if (!state || !state.results || state.results.length === 0) {
+    return (
+      <>
+        <Alert />
+        <Nav />
+        <div className="cards-container">
+          <p>There is no restaurant based on your search.</p>
+        </div>
+        <Footer />
+      </>
+    );
+  }
+
   return (
     <>
-      <Alert></Alert>
-      <Nav></Nav>
-      {/* {state.results} */}
-      {/* <ul>
-        {state.results.map((restaurant) => (
-          <li key={restaurant._id}>
-            {restaurant.name} - {restaurant.location}
-          </li>
-        ))}
-      </ul> */}
+      <Alert />
+      <Nav />
       <div className="cards-container">
         {state.results.map((restaurant) => (
           <div className="card-item" key={restaurant.id}>
@@ -36,7 +42,7 @@ const Search = () => {
           </div>
         ))}
       </div>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };
