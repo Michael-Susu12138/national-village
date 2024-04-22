@@ -5,6 +5,7 @@ const TextandImage = () => {
   return (
     <section className="how-it-works">
       <h2 className="section-title">How It Works</h2>
+      <hr className="horizontal-line" />
       <div className="steps-container">
         {/* Step 1 */}
         <div className="step">
@@ -48,15 +49,22 @@ const TextandImage = () => {
         {/* Step 3 */}
         <div className="step">
           <div className="step-image">
-            <img src="src/assets/Placeholder.jpg" alt="Step 3" />
+            <img src="src/assets/addsub.gif" alt="Step 3" />
           </div>
           <div className="step-content">
             <h3 className="step-title">
-              Step 3: <span className="green-text">Title</span>
+              Step 3:{" "}
+              <span className="green-text">
+                Feel free to add or delete restaurants!
+              </span>
             </h3>
             <p className="step-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <span className="green-text">National Village</span> can't exist
+              without the <span className="green-text">villagers</span>{" "}
+              themselves! See a restaurant with a deep-dish discount missing?
+              Add it to spread the wealth with your other villagers! See a
+              restaurant that's here by mistake? Vote to delete it! Once three
+              villagers vote to delete it, it'll disappear!
             </p>
           </div>
         </div>
@@ -64,15 +72,16 @@ const TextandImage = () => {
         {/* Step 4 (Reversed) */}
         <div className="step step-reverse">
           <div className="step-image">
-            <img src="src/assets/Placeholder.jpg" alt="Step 4" />
+            <img src="src/assets/piggybank.gif" alt="Step 4" />
           </div>
           <div className="step-content">
             <h3 className="step-title">
-              Step 4: <span className="green-text">Title</span>
+              Step 4: <span className="green-text">SAVE!</span>
             </h3>
             <p className="step-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              All caps. That's how you know we're serious about it. National
+              Village is free, crowdsourced by villagers, for villagers, to help
+              you save. So what are you waiting for?
             </p>
           </div>
         </div>
