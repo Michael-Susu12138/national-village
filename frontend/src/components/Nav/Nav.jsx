@@ -304,7 +304,7 @@ function Nav() {
                     data-testid="nav-category-fashion"
                     className="css-lo4idg"
                   >
-                    NYU Stern
+                    NYU
                   </Link>
                 </li>
                 <li className="css-17b3rz5">
