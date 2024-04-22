@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "../../components/Nav/Nav";
 import Alert from "../../components/Alert/Alert";
 import Card from "../../components/Card/Card";

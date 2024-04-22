@@ -18,11 +18,11 @@ const Card = (props) => {
     <div className="container">
       <div className="card">
         <div className="card-header">
-          <img src={props.imgURL} alt="rover" />
+          <img src="../src/assets/o-poke.jpg" />
         </div>
         <div className="card-body">
           <div className="tag-list">
-            {props.tags.map((tag, index) => (
+            {props.tags.map((tag, indexs) => (
               <span key={index} className="tag tag-teal">
                 {tag}
               </span>
@@ -30,6 +30,9 @@ const Card = (props) => {
           </div>
           <h4>{props.name}</h4>
           <p>{props.summary}</p>
+          <div className="discount">
+            <span>{props.discount} OFF</span>
+          </div>
           <div className="user">
             <a
               href="#"
