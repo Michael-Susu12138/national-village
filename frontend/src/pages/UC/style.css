@@ -1,0 +1,15 @@
+.uc {
+  display: inline;
+}
+
+h1 {
+  text-align: center;
+}
+
+.uc img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 50%;
+}

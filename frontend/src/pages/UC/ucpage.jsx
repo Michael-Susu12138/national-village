@@ -1,11 +1,17 @@
 import "./style.css";
+import Nav from "../../components/Nav/Nav";
+import Footer from "../../components/Footer/Footer";
 
 const UC = () => {
   return (
-    <div>
-      <h1>Désolé ^O^, this site is under construction</h1>
-      <img src="../src/assets/UCpic.png"></img>
-    </div>
+    <>
+      <Nav />
+      <div className="uc">
+        <h1>Désolé, this site is under construction</h1>
+        <img src="assets/UCpic.png"></img>
+      </div>
+      <Footer />
+    </>
   );
 };
 
