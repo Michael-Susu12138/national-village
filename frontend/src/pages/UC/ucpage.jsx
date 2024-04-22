@@ -8,7 +8,7 @@ const UC = () => {
       <Nav />
       <div className="uc">
         <h1>Désolé, this site is under construction</h1>
-        <img src="assets/UCpic.png"></img>
+        <img src="/assets/UCpic.png"></img>
       </div>
       <Footer />
     </>
