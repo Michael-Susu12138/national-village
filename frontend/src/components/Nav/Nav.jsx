@@ -40,8 +40,12 @@ function Nav() {
           <nav className="css-i3rj5z">
             <ul className="css-leg12c2">
               <li>
-                <a href="/" data-testid="nav-log" className="css-16w85wl"></a>
-                <a href="/" data-testid="nav-log" className="css-zffja8">
+                <Link
+                  to="/"
+                  data-testid="nav-log"
+                  className="css-16w85wl"
+                ></Link>
+                <Link to="/" data-testid="nav-log" className="css-zffja8">
                   <img
                     alt="Student Beans"
                     loading="lazy"
@@ -52,7 +56,7 @@ function Nav() {
                     className="css-0"
                     src="../src/assets/NVLogo.png"
                   />
-                </a>
+                </Link>
               </li>
               <li className="css-12zupta">
                 <a
@@ -185,13 +189,13 @@ function Nav() {
               ) : (
                 <>
                   <li className="css-zffja8">
-                    <a
-                      href="/login"
+                    <Link
+                      to="/login"
                       data-testid="nav-login"
                       className="css-u2nkub"
                     >
                       Login
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <div className="css-bves18">
@@ -239,17 +243,17 @@ function Nav() {
               </svg>
             </button>
             <div className="css-cn4vi6">
-              <a
+              <Link
                 className="css-b201hx"
-                href="/register"
+                to="/register"
                 type="button"
                 target="_self"
               >
                 <span className="css-xfi4js">Register</span>
-              </a>
-              <a href="/login" className="css-1eraa3y">
+              </Link>
+              <Link to="/login" className="css-1eraa3y">
                 Login
-              </a>
+              </Link>
             </div>
             <hr className="css-4pxfp7"></hr>
             <div className="css-14spjtp">
@@ -331,85 +335,85 @@ function Nav() {
             <nav className="css-b134hv">
               <ul className="css-g00pq8">
                 <li className="css-17b3rz5">
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     data-testid="nav-category-trending-now"
                     className="css-lo4idg"
                   >
                     Trending Now
-                  </a>
+                  </Link>
                 </li>
                 <li className="css-17b3rz5">
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     data-testid="nav-category-all"
                     className="css-lo4idg"
                   >
                     All
-                  </a>
+                  </Link>
                 </li>
                 <li className="css-17b3rz5">
-                  <a
-                    href="/tandon"
+                  <Link
+                    to="/tandon"
                     data-testid="nav-category-food-drink"
                     className="css-lo4idg"
                   >
                     NYU Tandon
-                  </a>
+                  </Link>
                 </li>
                 <li className="css-17b3rz5">
-                  <a
-                    href="/other"
+                  <Link
+                    to="/other"
                     data-testid="nav-category-fashion"
                     className="css-lo4idg"
                   >
                     NYU Stern
-                  </a>
+                  </Link>
                 </li>
                 <li className="css-17b3rz5">
-                  <a
-                    href="/other"
+                  <Link
+                    to="/other"
                     data-testid="nav-category-tech-mobile"
                     className="css-lo4idg"
                   >
                     NYU Shanghai
-                  </a>
+                  </Link>
                 </li>
                 <li className="css-17b3rz5">
-                  <a
-                    href="/other"
+                  <Link
+                    to="/other"
                     data-testid="nav-category-health-beauty"
                     className="css-lo4idg"
                   >
                     NYU Abu Dhabi
-                  </a>
+                  </Link>
                 </li>
                 <li className="css-17b3rz5">
-                  <a
-                    href="/other"
+                  <Link
+                    to="/other"
                     data-testid="nav-category-entertainment"
                     className="css-lo4idg"
                   >
                     NYU Paris
-                  </a>
+                  </Link>
                 </li>
                 <li className="css-17b3rz5">
-                  <a
-                    href="/other"
+                  <Link
+                    to="/other"
                     data-testid="nav-category-home-utilities"
                     className="css-lo4idg"
                   >
                     NYU London
-                  </a>
+                  </Link>
                 </li>
                 <li className="css-17b3rz5">
-                  <a
-                    href="/other"
+                  <Link
+                    to="/other"
                     data-testid="nav-category-travel"
                     className="css-lo4idg"
                   >
                     NYU Madrid
-                  </a>
+                  </Link>
                 </li>
                 <li className="css-1a45p86">
                   <button
