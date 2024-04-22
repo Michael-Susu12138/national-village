@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -93,9 +94,9 @@ const Footer = () => {
             <h2 className="css-jax8d3">Work With Us</h2>
             <ul className="list-none m-0 p-0">
               <li>
-                <a href="https://partner.studentbeans.com/">
+                <Link to="/uc">
                   <p className="css-hzehox">Advertise</p>
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="https://partner.studentbeans.com/about-us/careers/">
