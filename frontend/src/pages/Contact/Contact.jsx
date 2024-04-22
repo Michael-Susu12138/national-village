@@ -45,8 +45,6 @@ const Contact = () => {
     <>
       <Alert />
       <Nav />
-
-
       <div className="containe my-5">
         <h2 className="text-center mb-4">Contact Us</h2>
         <form ref={form} onSubmit={sendEmail} className="contact-form">

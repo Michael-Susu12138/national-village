@@ -132,10 +132,8 @@
   fill: #ffd700; /* Default color for stars (gold) */
 }
 .rating-overlay {
-  position: absolute;
   top: 10px; /* Adjust as necessary */
   right: 10px;
-  display: flex;
   align-items: center;
 }
 

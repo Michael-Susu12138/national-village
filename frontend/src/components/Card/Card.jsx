@@ -53,7 +53,6 @@ const Card = (props) => {
           </div>
         </div>
         <div className="card-body">
-
           <div className="tag-list">
             {props.tags.map((tag, index) => (
               <span key={index} className="tag tag-teal">
