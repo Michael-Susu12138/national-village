@@ -29,24 +29,24 @@
 ## Project Structure
 
 national-village
-├── backend  
-│ ├── controllers  
-│ ├── models  
-│ ├── passports  
-│ ├── public  
-│ ├── routes  
-│ ├── test  
-│ ├── package.json  
-│ └── server.mjs  
-├── frontend
-│ ├── public  
-│ ├── src  
-│ ├── components
-│ ├── services  
-│ ├── pages
-│ ├── App.jsx  
-│ ├── main.jsx
-│ └── package.json  
+├── backend                 
+│   ├── controllers       
+│   ├── models         
+│   ├── passports  
+│   ├── public   
+│   ├── routes  
+│   ├── test     
+│   ├── package.json   
+│   └── server.mjs  
+├── frontend 
+│   ├── public      
+│   ├── src        
+│       ├── components 
+│       ├── services  
+│       ├── pages
+│   ├── App.jsx    
+│   ├── main.jsx 
+│   └── package.json            
 └── README.md
 
 ## Setup and Installation
