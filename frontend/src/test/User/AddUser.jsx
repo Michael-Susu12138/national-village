@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 const AddUser = () => {
@@ -14,7 +14,7 @@ const AddUser = () => {
         password,
         email,
       })
-      .then((response) => {
+      .then(() => {
         alert("User added successfully");
         // Reset form or redirect as needed
       })

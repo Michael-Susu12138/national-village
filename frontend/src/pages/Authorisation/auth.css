@@ -6,7 +6,16 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+html,
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   min-height: 100vh;
   height: auto;
@@ -29,6 +38,8 @@ body {
 }
 
 .css-1y5im6x {
+  display: flex;
+  justify-content: center;
   position: relative;
   background-color: rgb(246, 247, 249);
 }
@@ -64,7 +75,6 @@ body {
   width: auto;
   overflow: visible;
   background: rgb(224, 228, 235);
-  display: inline-block;
   padding: 9px 12px 7px;
   font-size: 16px;
   border-radius: 5px;
@@ -82,29 +92,25 @@ body {
   margin-left: 8px !important;
 }
 
-.css-1j1xijh {
-}
-
-.css-1klt2ma {
-}
-
 .css-1bijsj2 {
   float: left;
   position: relative;
-  width: 50%;
-  padding: 10px;
-  padding-right: 10px;
+  width: 66.6667%;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
   text-align: center;
 }
 
 .css-10qpvih {
-  height: 27px;
-  vertical-align: middle;
+  position: relative;
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 50%;
 }
 
 .css-2sstpbq {
   position: relative;
-  display: inline-block;
   vertical-align: middle;
   width: 3.25em;
   height: 3.25em;
@@ -129,7 +135,6 @@ body {
   width: auto;
   overflow: visible;
   background: rgb(224, 228, 235);
-  display: inline-block;
   font-size: 16px;
   border-radius: 5px;
   color: rgb(7, 31, 69);
@@ -139,51 +144,11 @@ body {
   padding: 0px 15px 0px;
 }
 
-.hamburger {
-  cursor: pointer;
-}
-
-.hamburger input {
-  display: none;
-}
-
-.hamburger svg {
-  /* The size of the SVG defines the overall size */
-  height: 3em;
-  /* Define the transition for transforming the SVG */
-  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line {
-  fill: none;
-  stroke: rgb(0, 0, 0);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  /* Define the transition for transforming the Stroke */
-  transition:
-    stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line-top-bottom {
-  stroke-dasharray: 12 63;
-}
-
-.hamburger input:checked + svg {
-  transform: rotate(-45deg);
-}
-
-.hamburger input:checked + svg .line-top-bottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
-}
-
 .css-dc7ee6 {
   position: relative;
   overflow: visible;
   background-color: rgb(246, 247, 249);
-  padding: 0px 15px 75px;
+  padding: 0px 15px 286px;
 }
 
 .css-f076qf {
@@ -233,6 +198,19 @@ body {
   font-weight: 600;
 }
 
+.css-1qhaazl {
+  margin: 0px;
+  overflow: visible;
+  line-height: normal;
+  width: 50%;
+  padding: 18px 2px 14px;
+  text-decoration: none;
+  border: none;
+  background: rgb(224, 228, 235);
+  color: rgb(107, 122, 148);
+  box-shadow: rgba(7, 31, 69, 0.05) 4px -4px 5px inset;
+}
+
 .css-ouos42 {
   position: relative;
   width: 100%;
@@ -250,16 +228,29 @@ body {
   font-family: "Gibson SemiBold", Helvetica, Arial, "Sans Serif";
 }
 
+.css-1b21cc7 {
+  margin: 0px;
+  line-height: 1.25em;
+  color: rgb(7, 31, 69);
+  font-size: 24px;
+  font-family: "Gibson SemiBold", Helvetica, Arial, "Sans Serif";
+}
+
 .css-11biiks {
   margin: 0px;
   font-family: Gibson, Helvetica, Arial, "Sans Serif";
   line-height: 1.5em;
   color: rgb(7, 31, 69);
   font-size: 16px;
+  margin-bottom: 2.75rem;
 }
 
 .css-1d0nbku {
-  margin-top: 24px;
+  margin-top: 0;
+}
+
+.css-1fgdcyd {
+  margin-bottom: 44px;
 }
 
 form {
@@ -312,13 +303,17 @@ form {
   height: 46px;
   padding: 0px 12px;
   margin: 0px;
-  font-size: 16px;
+  width: 90%;
   font-family: Gibson, Helvetica, Arial, "Sans Serif";
   line-height: 24px;
   color: rgb(7, 31, 69);
   border-radius: 5px;
   border: 1px solid rgb(224, 228, 235);
   background: rgb(239, 241, 245);
+}
+
+.css-1ajuzyj {
+  font-size: 30px;
 }
 
 .css-koxizw {
@@ -334,7 +329,7 @@ form {
 }
 
 .css-2ji8uu {
-  margin-top: 1.25em;
+  margin-top: 1em;
 }
 
 .css-1j1xijh {
@@ -348,8 +343,26 @@ form {
   text-align: center;
   cursor: pointer;
   transition: background-color 200ms ease 0s;
-  width: 100%;
-  display: flex;
+  width: 90%;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.css-1j1xijz {
+  border: none;
+  overflow: visible;
+  background: rgb(101, 35, 227);
+  line-height: normal;
+  margin: 8px 0px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 200ms ease 0s;
+  width: 90%;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -361,6 +374,7 @@ form {
   text-align: center;
   padding: 0px 30px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .css-19xlmcl {
@@ -369,6 +383,11 @@ form {
   line-height: 1.5em;
   color: rgb(7, 31, 69);
   font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
 }
 
 @media (min-width: 1100px) {
@@ -383,8 +402,5 @@ form {
 @media (min-width: 780px) {
   .css-ouos42 {
     padding: 50px 32px 32px;
-  }
-  .css-127glno {
-    display: none;
   }
 }

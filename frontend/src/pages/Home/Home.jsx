@@ -1,17 +1,20 @@
 import Alert from "../../components/Alert/Alert";
 import Nav from "../../components/Nav/Nav";
-// import Card from "../../components/Card/Card";
-// import Footer from "../../components/Footer/Footer";
-import React from "react";
+
+
+import BackgroundImage from "../../components/BackgroundImage/BackgroundImage";
+
+import Footer from "../../components/Footer/Footer";
+import TextandImage from "../../components/TextandImage/TextandImage";
+
 
 const Home = () => {
   return (
     <>
       <Alert />
       <Nav />
-      {/* <Card /> */}
-      {/* <Card /> */}
-      {/* <Card /> */}
+      <BackgroundImage />
+      <TextandImage />
       <Footer />
     </>
   );
